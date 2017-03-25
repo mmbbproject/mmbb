@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+
+    <meta name="description" content="Minimalist Modern Bootstrap Blogger">
+    <meta name="author" content="ox69xo">
 
     <title>Home - Minimalist Modern Bootstrap Blogger</title>
     <!--<link rel="stylesheet" id="options-google-fonts" href="//fonts.googleapis.com/css?family=Roboto:300,400&subset=latin" type="text/css" media="all"/>-->
@@ -15,6 +15,7 @@
     <link href="css/bootstrap.custom.min.css" rel="stylesheet">
     <link href="css/mmbb.font.min.css" rel="stylesheet">    
     <link href="css/styles.css" rel="stylesheet"> 
+    <!-- <link href="css/widget_css_bundle.css" rel="stylesheet">  -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <!-- hanya memakai collapse Bootstrap -->
     <script type="text/javascript" src="js/collapse.js"></script>
@@ -22,7 +23,7 @@
 
   <body>
 
-<nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container">
         <div class="navbar-header">
@@ -41,6 +42,16 @@
                 <li><a href="javascript:;">About</a></li>
                 <li><a href="javascript:;">Contact</a></li>
             </ul>
+            <form action='/search' class='navbar-form navbar-right' method='get' role='search'>
+              <div class='input-group'>
+                <input class='form-control form-main-search' required='true' name='q' placeholder='Search' type='text'/>
+                <div class='input-group-btn'>
+                  <button class='btn btn-default' type='submit'>
+                    <span class='icon jqh-search'/>
+                  </button>
+                </div>
+              </div>
+            </form>   
         </div>
     </div>
 </nav> 
@@ -55,7 +66,7 @@
 
 <div class="container">
  <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mmbb-header" >
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mmbb-header">
 
 <ol class="breadcrumb">
   <li><a href="#">Home</a></li>
@@ -69,18 +80,10 @@
    <ul class="list-group"> <!-- Status msg -->
      <li class="list-group-item">
 
-<div class="status-msg-wrap">
-  <div class="status-msg-body">
-Tampilkan posting dengan label <b>label 3</b>. <a href="http://ip3web.blogspot.com/">Tampilkan semua posting</a>
-  </div>
-  <div class="status-msg-border">
-    <div class="status-msg-bg">
-      <div class="status-msg-hidden">
-        Tampilkan posting dengan label <b>label 3</b>. <a href="http://ip3web.blogspot.com/">Tampilkan semua posting</a>
+
+      <div class="status-msg-body">
+    sssssTampilkan posting dengan label <b>label 3</b>. <a href="http://ip3web.blogspot.com/">Tampilkan semua posting</a>
       </div>
-    </div>
-  </div>
-</div>
     </li>
    </ul><!--  /.status msg -->
 
@@ -223,7 +226,7 @@ Tampilkan posting dengan label <b>label 3</b>. <a href="http://ip3web.blogspot.c
     <div class="panel panel-default">
       <div class="panel-heading"><h5 class="panel-title">Popular Post</h5></div>
         <ul class="list-group">
-          <li class="list-group-item">
+          <li class="list-group-item disabled">
           <div class="media text-muted small">          
             <div class="media-left">
               <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
@@ -286,8 +289,8 @@ Tampilkan posting dengan label <b>label 3</b>. <a href="http://ip3web.blogspot.c
       <div class="panel-heading"><h4 class="panel-title">Blogroll</h4></div>
       <div class="panel-body">
         <ul class="list-unstyled">
-          <li>&middot; <a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a></li>
-          <li>&middot; <a href="http://mmbbproject.github.io" target="_blank">blog url 2</a></li>
+          <li>&bull; <a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a></li>
+          <li>&bull; <a href="http://mmbbproject.github.io" target="_blank">blog url 2</a></li>
         </ul>
       </div>
       <div class="panel-footer">
@@ -309,7 +312,7 @@ Tampilkan posting dengan label <b>label 3</b>. <a href="http://ip3web.blogspot.c
        </div>
       </div>
       <div class="panel-footer">
-        <a href="http://mmbbproject.github.io" target="_blank">Follow me @ox69xo</a>
+        <a href="javascript:;" class="jqh-link" target="_blank"><span class="icon jqh-twitter icon-md"></span></a>
       </div>
     </div>
    </div> 
@@ -322,7 +325,7 @@ Tampilkan posting dengan label <b>label 3</b>. <a href="http://ip3web.blogspot.c
 <footer>
 <div class='container'>
 <p>Copyleft &copy; 2017 <a href='http://twitter.com/ox69xo' target='_blank'>ox69xo</a> &middot; <a href='http://jqueryholic.blogspot.co.id/' target='_blank'>MMBB Project blog</a>
-<span><span class="hidden-lg">&middot;</span> Hosted by <a href='http://github.com' target='_blank'>Github</a>.</span>
+<span><span class="hidden-lg hidden-md">&middot;</span> Hosted by <a href='http://github.com' target='_blank'>Github</a>.</span>
 </p>
 </div>
 </footer>

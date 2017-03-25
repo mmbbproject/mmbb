@@ -29,4 +29,15 @@
 - Mengganti font icon dari _Glyphicon_ ke _MMBB-font icon_, jumlah icon tidak lebih dari 50, sudah tersedia social icon. Ukuran font jauh lebih ramping dari _Glyphicon_ karena hanya memasukkan icon yang dibutuhkan. Custom font di fontastic.me
 > Begitu juga Bootstrap css, di custom dan dihilangkan element _glyphicon_, jumbotron dan well. Custom langsung di getbootstrap.com
 - Mengganti JS bootstrap full, dengan hanya menggunakan collapse.js
-
+## 24/03/2017
+### XML
+- Convert ke xml, home post, pager, sidebar, post-detail, share button.
+## 25/03/2017
+### HTML
+- Ganti style pager, posisi tidak melebar tapi rata ke tengah. _Style *Pager* tanpa li.class next/prev._
+- Fix style _status-msg,_ padding dirapatkan
+- Fix style _home post_, padding di rapatkan.
+- Fix style _popularpost_, padding _media_ top dan bottom di rapatkan dengan border.
+- Ubah background-color body menjadi #f8f8f8, agar lebih nyaman di mata.
+### XML
+- Convert update-an html ke xml

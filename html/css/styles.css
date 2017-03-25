@@ -1,27 +1,22 @@
-/* Move down content because we have a fixed navbar that is 50px tall */
+#navbar-iframe{display:none}
 body {
   padding-top:51px;
   padding-bottom: 20px;
-  /*font-family:Roboto;*/
+  background-color: #f8f8f8;
+  font-family:sans-serif;
 }
 hr {margin-top:0;margin-bottom:0}
 a, a:hover, a:focus {transition:.5s;text-decoration:none;}
 h1,h2,h3,h4 {font-weight:300}
 .jumbotron {padding:15px;margin-bottom: 10px}
 #mmbb-header, #mmbb-main, #mmbb-sidebar1 , #mmbb-sidebar2 {padding:6px;}
-.panel-heading {padding-left:8px;}
 /* reset Style status msg body */
-/*.status-msg-body h2{font-size:1.77777em;text-transform:none}
-.status-msg-border {border:none !important}
-.status-msg-bg {background-color:#fff !important}
-.status-msg-body {position:relative !important}*/
-
+.status-msg-border {display: none}
+.status-msg-body {position:relative;padding:0px;margin:-5px;}
 #mmbb-header {padding-bottom:0}
 #mmbb-header .breadcrumb {margin-bottom:0;border:1px solid #ddd;}
 #mmbb-main .pager{margin-top:-5px;} /*margin-top -5px untuk home jarak ke widget */
 
-/*status-msg*/
-.status-msg-border {display: none}
 #mmbb-main > .list-group {margin-bottom:6px;} 
 
 .mmbb-home-post .list-group-item .media-title > h5{line-height:1.3em;margin:0 0 5px 0;}
@@ -30,15 +25,18 @@ h1,h2,h3,h4 {font-weight:300}
 #mmbb-main .panel-body {padding:8px}
 
 #mmbb-sidebar1 .panel-footer, #mmbb-sidebar2 .panel-footer {text-align: center}
-.mmbb-popularpost .list-group-item {padding:10px 5px 0px 8px;}
-.home-post .media-left img{width:80px;height:80px;}
+.mmbb-popularpost .list-group-item {padding:10px 5px 0px 8px}
+.mmbb-popularpost .list-group-item .media{margin-bottom:-3px;margin-top:-2px;}
+.mmbb-home-post .media-left img{width:80px;height:80px;}
+.mmbb-home-post .media{margin:-5px;margin-bottom: 0}
 .mmbb-category .panel-body {padding-bottom:0;}
 .mmbb-category .list-inline li {margin-bottom:5px;padding:0;}
 
 .mmbb-post-detail .panel-body {padding-bottom: 0}
+.mmbb-post-detail .panel-heading {padding-left:8px }
 .mmbb-post-detail > .panel .list-group .list-group-item {padding:8px;}
 .mmbb-post-detail .panel-footer{border-radius: 0;border-bottom: 1px solid #ddd;padding-right:8px;}
-.mmbb-postrelated > h5 {margin-left: 10px;margin-bottom:0;}
+.mmbb-postrelated > h5 {margin-left: 8px;margin-bottom:0;}
 .mmbb-postrelated .list-group{margin-bottom: 0}
 .mmbb-postrelated .list-group-item {border-radius: 0;border:none;padding-left:10px;}
 .mmbb-postrelated .list-group-item:not(:first-child){border-top:1px solid #ddd;}

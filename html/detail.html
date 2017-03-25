@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Minimalist Modern Bootstrap Blogger">
+    <meta name="author" content="ox69xo">
 
     <title>Detail - Minimalist Modern Bootstrap Blogger</title>
     <!--<link rel="stylesheet" id="options-google-fonts" href="//fonts.googleapis.com/css?family=Roboto:300,400&subset=latin" type="text/css" media="all"/>-->
@@ -24,7 +24,7 @@
 
   <body>
 
-<nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container">
         <div class="navbar-header">
@@ -43,6 +43,16 @@
                 <li><a href="javascript:;">About</a></li>
                 <li><a href="javascript:;">Contact</a></li>
             </ul>
+            <form action='/search' class='navbar-form navbar-right' method='get' role='search'>
+              <div class='input-group'>
+                <input class='form-control form-main-search' required='true' name='q' placeholder='Search' type='text'/>
+                <div class='input-group-btn'>
+                  <button class='btn btn-default' type='submit'>
+                    <span class='icon jqh-search'/>
+                  </button>
+                </div>
+              </div>
+            </form>            
         </div>
     </div>
 </nav> 
@@ -80,10 +90,9 @@
        </li>
        <li class="list-group-item">
         <span class="icon jqh-tags"></span>
-          <a href="javascript:;">HTML</a>,
-          <a href="javascript:;"> CSS</a>,
-          <a href="javascript:;"> PHP</a>
-        </ul>
+          <a href="javascript:;">HTML</a>, 
+          <a href="javascript:;">CSS</a>, 
+          <a href="javascript:;">PHP</a>
        </li>
       </ul>
       <div class="panel-body">
@@ -115,10 +124,10 @@
       <div class="mmbb-postrelated">
         <h5>Post terkait</h5>
         <ul class="list-group">
-          <li class="list-group-item"><span class="hidden-xs">&middot;</span> <a href="javascript:;">lorem it. Quos, quaerat? Atque nulla, eos ipsum, omn</a></li>
-          <li class="list-group-item"><span class="hidden-xs">&middot;</span> <a href="javascript:;">etium architecto amet expedita rem, quam, del</a></li>
-          <li class="list-group-item"><span class="hidden-xs">&middot;</span> <a href="javascript:;">lorem cusandae a perspiciatis adipisci accusan</a></li>
-          <li class="list-group-item"><span class="hidden-xs">&middot;</span> <a href="javascript:;">Lorem ipsum dolor sit amet, consectetur adipisiciendis.</a></li>
+          <li class="list-group-item"><span class="hidden-xs">&bull;</span> <a href="javascript:;">lorem it. Quos, quaerat? Atque nulla, eos ipsum, omn</a></li>
+          <li class="list-group-item"><span class="hidden-xs">&bull;</span> <a href="javascript:;">etium architecto amet expedita rem, quam, del</a></li>
+          <li class="list-group-item"><span class="hidden-xs">&bull;</span> <a href="javascript:;">lorem cusandae a perspiciatis adipisci accusan</a></li>
+          <li class="list-group-item"><span class="hidden-xs">&bull;</span> <a href="javascript:;">Lorem ipsum dolor sit amet, consectetur adipisiciendis.</a></li>
         </ul>
       </div>
     </div>  <!-- /. panel post-detail   -->
@@ -230,8 +239,8 @@
       <div class="panel-heading"><h4 class="panel-title">Blogroll</h4></div>
       <div class="panel-body">
         <ul class="list-unstyled">
-          <li>&middot; <a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a></li>
-          <li>&middot; <a href="http://mmbbproject.github.io" target="_blank">blog url 2</a></li>
+          <li>&bull; <a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a></li>
+          <li>&bull; <a href="http://mmbbproject.github.io" target="_blank">blog url 2</a></li>
         </ul>
       </div>
       <div class="panel-footer">
@@ -266,7 +275,7 @@
 <footer>
 <div class='container'>
 <p>Copyleft &copy; 2017 <a href='http://twitter.com/ox69xo' target='_blank'>ox69xo</a> &middot; <a href='http://jqueryholic.blogspot.co.id/' target='_blank'>MMBB Project blog</a>
-<span><span class="hidden-lg">&middot;</span> Hosted by <a href='http://github.com' target='_blank'>Github</a>.</span>
+<span><span class="hidden-lg hidden-md">&middot;</span> Hosted by <a href='http://github.com' target='_blank'>Github</a>.</span>
 </p>
 </div>
 </footer>
