@@ -3,187 +3,83 @@
 <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
-
+    
     <b:include data='blog' name='all-head-content'/>
 
-	<b:if cond='data:blog.pageType == &quot;item&quot;'>
-	<title><data:blog.pageName/> | <data:blog.title/></title>
-	<b:else/><title><data:blog.pageTitle/></title>
-	</b:if>
-	<b:if cond='data:blog.pageType == &quot;archive&quot;'>
-	<title><data:blog.pageName/> | <data:blog.title/></title>
-	</b:if>
-	<b:if cond='data:blog.pageType == &quot;label&quot;'>
-	<title><data:blog.pageName/> | <data:blog.title/></title>
-	</b:if>
+    <link href="https://3.bp.blogspot.com/-Ij3_NglHPq0/WNmfdFA-X6I/AAAAAAAAA0k/aq9noo3vs5cHNBc_tggTfv0xPCNCO9fpACLcB/s1600/mmbb-icon.ico" rel="icon" type="image/x-icon"/>
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=latin' rel='stylesheet'/> 
+  	<b:if cond='data:blog.pageType == &quot;item&quot;'>
+  	 <title><data:blog.pageName/> | <data:blog.title/></title>
+  	<b:else/><title><data:blog.pageTitle/></title>
+  	</b:if>
+  	<b:if cond='data:blog.pageType == &quot;archive&quot;'>
+  	 <title><data:blog.pageName/> | <data:blog.title/></title>
+  	</b:if>
+  	<b:if cond='data:blog.pageType == &quot;label&quot;'>
+  	 <title><data:blog.pageName/> | <data:blog.title/></title>
+  	</b:if>
   <link href='https://cdn.rawgit.com/seujungkuku/own/4cf59d15/bootstrap.custom.mmbb.min.css' rel='stylesheet'/> 
   <link href='https://cdn.rawgit.com/seujungkuku/own/f9710b3c/mmbb.icon.min.css' rel='stylesheet' type='text/css'/>
   
-    <b:skin><![CDATA[
-      
+ <!--    <b:skin><![CDATA[ -->
+&lt;style type=&quot;text/css&quot;&gt;
+&lt;!-- /*<b:skin><![CDATA[*/]]></b:skin>
+<style type='text/css'>      
 /*
 ----------------------------------------------
 Minimalist Modern Bootstrap Blogger Template
 ----------------------------------------------
-Name				: MMBB
+Name				: MMBB Template
+Version     : 1.0
 Author			: ox69xo
 Author URL	: http://jqueryholic.blogspot.co.id/
 Date				: Feb, 2017
-on Twitter	: ox69xo
+Twitter     : ox69xo
 Web Project : http://mmbbproject.github.io
 Development : http://github.com/mmbbproject/mmbb
 -----------------------------------------------
 License:
+Baca: http://github.com/mmbbproject/mmbb/README.md
 Bebas didistribusikan dan dimodifikasi, dengan syarat yaitu tidak menghilangkan deskripsi author seperti tertera di atas.
 Juga wajib menambahkan informasi author (ox69xo) dihalaman bawah blog lengkap dengan link aktif ke (http://jqueryholic.blogspot.co.id/).
 
 Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fontastic.me.
------------------------------------------------ */      
-#navbar-iframe{display:none}
-body {
-  padding-top:51px;
-  padding-bottom: 20px;
-  background-color: #f8f8f8;
-  font-family:sans-serif;
-}
-hr {margin-top:0;margin-bottom:0}
-a, a:hover, a:focus {transition:.5s;text-decoration:none;}
-h1,h2,h3,h4 {font-weight:300}
-.jumbotron {padding:15px;margin-bottom: 10px}
-#mmbb-header, #mmbb-main, #mmbb-sidebar1 , #mmbb-sidebar2 {padding:6px;}
-/* reset Style status msg body */
-.status-msg-border {display: none}
-.status-msg-body {position:relative;padding:0px;margin:-5px;}
-#mmbb-header {padding-bottom:0}
-#mmbb-header .breadcrumb {margin-bottom:0;border:1px solid #ddd;}
-#mmbb-main .pager{margin-top:-5px;} /*margin-top -5px untuk home jarak ke widget */
-
-#mmbb-main > .list-group {margin-bottom:6px;} 
-
-.mmbb-home-post .list-group-item .media-title > h5{line-height:1.3em;margin:0 0 5px 0;}
-#mmbb-sidebar1 .widget .panel, #mmbb-sidebar2 .widget .panel {margin-bottom:8px}
-
-#mmbb-main .panel-body {padding:8px}
-
-#mmbb-sidebar1 .panel-footer, #mmbb-sidebar2 .panel-footer {text-align: center}
-.mmbb-popularpost .list-group-item {padding:10px 5px 0px 8px}
-.mmbb-popularpost .list-group-item .media{margin-bottom:-3px;margin-top:-2px;}
-.mmbb-home-post .media-left img{width:80px;height:80px;}
-.mmbb-home-post .media{margin:-5px;margin-bottom: 0}
-.mmbb-category .panel-body {padding-bottom:0;}
-.mmbb-category .list-inline li {margin-bottom:5px;padding:0;}
-
-.mmbb-post-detail .panel-body {padding-bottom: 0}
-.mmbb-post-detail .panel-heading {padding-left:8px }
-.mmbb-post-detail > .panel .list-group .list-group-item {padding:8px;}
-.mmbb-post-detail .panel-footer{border-radius: 0;border-bottom: 1px solid #ddd;padding-right:8px;}
-.mmbb-postrelated > h5 {margin-left: 8px;margin-bottom:0;}
-.mmbb-postrelated .list-group{margin-bottom: 0}
-.mmbb-postrelated .list-group-item {border-radius: 0;border:none;padding-left:10px;}
-.mmbb-postrelated .list-group-item:not(:first-child){border-top:1px solid #ddd;}
-.mmbb-author .thumbnail {padding-top:8px;margin-bottom:0;}
-
-.jqh-sharing h5{display:inline-block;margin:0;padding-right:10px;color:#777;}
-.jqh-sharing a .icon{color: #bbb;transition:.5s}
-.icon {
-  display: inline-block;
-  vertical-align: -15%;
-  position:relative;
-  font: normal normal normal 14px/1 mmbb-font;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-sm {font-size:1.33333333em;line-height: 0.75em;vertical-align: -30%}
-.icon-md {font-size:1.66666666em;line-height: 1em;vertical-align: -28%}
-.jqh-link:hover .jqh-googleplus,
-.jqh-link:hover .jqh-googleplus-square,
-.jqh-link-colored .jqh-googleplus,
-.jqh-link-colored .jqh-googleplus-square,
-.jqh-sharing a:hover .jqh-googleplus,
-.jqh-sharing a:hover .jqh-googleplus-square,
-.jqh-sharing-colored a .jqh-googleplus,
-.jqh-sharing-colored a .jqh-googleplus-square {color:#DC4E41}
-
-.jqh-link:hover .jqh-facebook,
-.jqh-link:hover .jqh-facebook-square,
-.jqh-link-colored .jqh-facebook,
-.jqh-link-colored .jqh-facebook-square,
-.jqh-sharing a:hover .jqh-facebook,
-.jqh-sharing a:hover .jqh-facebook-square,
-.jqh-sharing-colored a .jqh-facebook,
-.jqh-sharing-colored a .jqh-facebook-square {color:#3B5998}
-
-.jqh-link:hover .jqh-twitter,
-.jqh-link:hover .jqh-twitter-square,
-.jqh-link-colored .jqh-twitter + b,
-.jqh-link-colored .jqh-twitter,
-.jqh-link-colored .jqh-twitter-square,
-.jqh-sharing a:hover .jqh-twitter,
-.jqh-sharing a:hover .jqh-twitter-square,
-.jqh-sharing-colored a .jqh-twitter,
-.jqh-sharing-colored a .jqh-twitter-square{color:#1DA1F2}
-
-.jqh-sharing-colored a:hover .icon{color:#bbb;}
-.jqh-link .icon {color:#bbb}
-.mmbb-pager a.active {color: #bbb; background-color: #eee;cursor:default}
-
-.mmbb-blogroll .panel-body {padding:10px 10px 3px 10px;}
-footer {padding-top:15px;border-top:1px solid #ddd}
-@media (min-width:768px){
-  #mmbb-header, #mmbb-main, #mmbb-sidebar1 , #mmbb-sidebar2 {padding:3px}
-  #mmbb-header {padding-top: 6px}
-  footer {margin-top:10px;}
-  footer span {float:right;}
-}
-@media (min-width:767px){
-#mmbb-main .pager{margin-bottom:8px} /*margin-top -5px untuk home jarak ke widget */  
-}
-@media (max-width:767px){
-#mmbb-main .pager{margin-bottom:1px} /*margin-top -5px untuk home jarak ke widget */  
-#mmbb-sidebar2 .widget:first-of-type {margin-top: -12px}  
- footer {text-align:center}
-}
-    ]]></b:skin>
-
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' type='text/javascript'/>
-
+----------------------------------------------- */
+#navbar-iframe{display:none}body{padding-top:51px;padding-bottom:10px;background-color:#f8f8f8;font-family:sans-serif}hr{margin-top:0;margin-bottom:0}a,a:hover,a:focus{transition:.5s;text-decoration:none}h1,h2,h3,h4{font-weight:300}#mmbb-header,#mmbb-main,#mmbb-sidebar1,#mmbb-sidebar2{padding:6px}.status-msg-border{display:none}.status-msg-body{position:relative;padding:0;margin:-5px}#mmbb-header{padding-bottom:0}#mmbb-header .breadcrumb{margin-bottom:0;border:1px solid #ddd}#mmbb-main>.list-group{margin-bottom:6px}.mmbb-home-post .list-group-item .media-title>h5{line-height:1.3em;margin:0 0 5px 0}#mmbb-sidebar1 .widget .panel,#mmbb-sidebar2 .widget .panel{margin-bottom:8px}#mmbb-main .panel-body{padding:8px}.mmbb-pager{margin-top:-8px}#mmbb-main>.list-group+.mmbb-pager{margin-top:20px}.mmbb-disqus{margin-top:13px}.panel-footer{text-align:center}.mmbb-popularpost .list-group-item{padding:8px 5px 8px 8px}.mmbb-popularpost .media-body p{margin-bottom:0}.mmbb-popularpost .media-left{padding-right:8px}.mmbb-popularpost .media-left img,.mmbb-home-post .media-left img{height:80px;width:80px}.mmbb-home-post .media{margin:-5px;margin-bottom:0}.mmbb-category .panel-body{padding-bottom:0}.mmbb-category .list-inline li{margin-bottom:5px;padding:0}.mmbb-post-detail .panel-body{padding-bottom:0}.mmbb-post-detail .panel-heading{padding-left:8px}.mmbb-post-detail>.panel .list-group .list-group-item{padding:8px}.mmbb-post-detail .panel-footer{padding-right:10px}.mmbb-author .thumbnail{padding-top:8px;margin-bottom:0}.jqh-sharing h5{display:inline-block;margin:0;padding-right:10px;color:#777}.jqh-sharing a .icon{color:#bbb;transition:.5s}.icon{display:inline-block;vertical-align:-15%;position:relative;font:normal normal normal 14px/1 mmbb-font;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-sm{font-size:1.33333333em;line-height:.75em;vertical-align:-30%}.icon-md{font-size:1.66666666em;line-height:1em;vertical-align:-28%}.jqh-link:hover .jqh-googleplus,.jqh-link:hover .jqh-googleplus-square,.jqh-link-colored .jqh-googleplus,.jqh-link-colored .jqh-googleplus-square,.jqh-sharing a:hover .jqh-googleplus,.jqh-sharing a:hover .jqh-googleplus-square,.jqh-sharing-colored a .jqh-googleplus,.jqh-sharing-colored a .jqh-googleplus-square{color:#dc4e41}.jqh-link:hover .jqh-facebook,.jqh-link:hover .jqh-facebook-square,.jqh-link-colored .jqh-facebook,.jqh-link-colored .jqh-facebook-square,.jqh-sharing a:hover .jqh-facebook,.jqh-sharing a:hover .jqh-facebook-square,.jqh-sharing-colored a .jqh-facebook,.jqh-sharing-colored a .jqh-facebook-square{color:#3b5998}.jqh-link:hover .jqh-twitter,.jqh-link:hover .jqh-twitter-square,.jqh-link-colored .jqh-twitter+b,.jqh-link-colored .jqh-twitter,.jqh-link-colored .jqh-twitter-square,.jqh-sharing a:hover .jqh-twitter,.jqh-sharing a:hover .jqh-twitter-square,.jqh-sharing-colored a .jqh-twitter,.jqh-sharing-colored a .jqh-twitter-square{color:#1da1f2}.jqh-sharing-colored a:hover .icon{color:#bbb}.jqh-link .icon,.jqh-link svg{color:#bbb}svg{position:relative;fill:currentColor;vertical-align:-12.44444%}.mmbb-blogroll .panel-body{padding:10px 10px 3px 10px}footer{padding-top:15px;border-top:1px solid #ddd}@media(min-width:768px){.mmbb-disqus{margin-bottom:-18px}.mmbb-popularpost .media{font-size:90%}#mmbb-header,#mmbb-main,#mmbb-sidebar1,#mmbb-sidebar2{padding:3px}#mmbb-header{padding-top:6px}footer{margin-top:10px}footer .flast{float:right}}@media(min-width:767px){#mmbb-main .pager{margin-bottom:8px}}@media(max-width:767px){.mmbb-disqus{margin-bottom:-24px}.breadcrumb,.mmbb-popularpost,.mmbb-home-post{line-height:1.3em}.mmbb-category .btn{padding:1px 5px;font-size:100%}#mmbb-main .pager{margin-bottom:1px}#mmbb-sidebar2 .widget:first-of-type{margin-top:-12px}footer,footer .col-xs-12{text-align:center}}
+</style>
+    <!-- ]]></b:skin> -->
   </head>
-  <body>
+<body>
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" expr:href="data:blog.homepageUrl">MMBB Template</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a expr:href="data:blog.homepageUrl">Home</a></li>
-                <li><a href="javascript:;">About</a></li>
-                <li><a href="javascript:;">Contact</a></li>
-            </ul>
-            <form action='/search' class='navbar-form navbar-right' method='get' role='search'>
-              <div class='input-group'>
-                <input class='form-control form-main-search' required='true' name='q' placeholder='Search' type='text'/>
-                <div class='input-group-btn'>
-                  <button class='btn btn-default' type='submit'>
-                    <span class='icon jqh-search'/>
-                  </button>
-                </div>
-              </div>
-            </form>   
-        </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" expr:href="data:blog.homepageUrl">MMBB Template</a>
     </div>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="nav navbar-nav" id="mmbb-headermenu">
+        <li><a expr:href="data:blog.homepageUrl">Home</a></li>
+        <li><a expr:href="data:blog.homepageUrl + &quot;p/about.html&quot;">About</a></li>
+        <li><a expr:href="data:blog.homepageUrl + &quot;p/contact.html&quot;">Contact</a></li>
+      </ul>
+      <form action='/search' class='navbar-form navbar-right' method='get' role='search'>
+        <div class='input-group'>
+          <input class='form-control form-main-search' required='true' name='q' placeholder='Search' type='text'/>
+          <div class='input-group-btn'>
+            <button class='btn btn-default' type='submit'>
+              <span class='icon jqh-search'/>
+            </button>
+          </div>
+        </div>
+      </form>   
+    </div>
+  </div>
 </nav> 
  
 <div class='container'>
@@ -207,10 +103,10 @@ footer {padding-top:15px;border-top:1px solid #ddd}
             <b:else/>
               <b:loop values='data:posts' var='post'>
                 <b:include data='post' name='post'/>
-              </b:loop>            
+              </b:loop>
             </b:if>
             <b:if cond='data:blog.pageType != &quot;item&quot;'>
-              <b:include name='nextprev'/>
+              <div class="mmbb-pager"><b:include name='nextprev'/></div>
             </b:if>
             </div>
             <b:else/>
@@ -320,12 +216,15 @@ footer {padding-top:15px;border-top:1px solid #ddd}
               <b:if cond='data:blog.homepageUrl == data:blog.url'>
                 <li class="active">Home</li>
               <b:else/>
-                <li><a expr:href='data:blog.homepageUrl' rel='Home'>Home</a></li>                
+                <li><a expr:href='data:blog.homepageUrl' rel='Home'>Home</a></li>
                <b:if cond='data:blog.pageType == &quot;item&quot;'>
                 <b:loop values='data:posts' var='post'>
                 <b:if cond='data:post.labels'>
-                 <b:loop values='data:post.labels' var='label'>
-                  <b:if cond='data:label.isLast == &quot;true&quot;'>
+                 <b:loop values='data:post.labels' var='label' index='jqh'>
+                  <b:if cond='data:jqh == 0'>
+                    <li><a class='text-capitalize' expr:href='data:label.url' rel='tag'><data:label.name/></a></li>
+                  </b:if>                    
+                  <b:if cond='data:jqh == 1'>
                     <li><a class='text-capitalize' expr:href='data:label.url' rel='tag'><data:label.name/></a></li>
                   </b:if>
                  </b:loop>
@@ -651,12 +550,7 @@ footer {padding-top:15px;border-top:1px solid #ddd}
             </b:if>
             <div class='date-posts'>
               <div class='post-outer'>
-                <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
-                  <b:if cond='data:post.thumbnailUrl'>
-                    <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
-                  </b:if>
-                  <meta expr:content='data:blog.blogId' itemprop='blogId'/>
-                  <meta expr:content='data:post.id' itemprop='postId'/>
+                <div class='post hentry uncustomized-post-template'>
                   <a expr:name='data:post.id'/>
                   <b:if cond='data:post.title'>
                     <h3 class='post-title entry-title' itemprop='name'>
@@ -762,20 +656,30 @@ footer {padding-top:15px;border-top:1px solid #ddd}
          <nav aria-label='paging-nextprev'>
           <ul class='pager'>
             <b:if cond='data:newerPageUrl'>
-             <li>
-              <a expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:blog.title + data:mobileLinkMsg + data:newerPageTitle'>
-              <data:newerPageTitle/></a>
-             </li>    
+              <li class='previous'>
+                <a expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:blog.title + data:mobileLinkMsg + data:newerPageTitle'>
+                  <span class='icon jqh-angle-left icon-md'/></a>
+              </li>
+            <b:else/>
+              <li class='previous'>
+                <a class='active' expr:title='data:blog.title + data:mobileLinkMsg + data:newerPageTitle'>
+                  <span class='icon jqh-angle-left icon-md'/></a>
+              </li>         
             </b:if>
             <b:if cond='data:olderPageUrl'>
-             <li>
-              <a expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:blog.title + data:mobileLinkMsg + data:olderPageTitle'><data:olderPageTitle/></a>
-             </li>
+              <li class='next'>
+                <a expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:blog.title + data:mobileLinkMsg + data:olderPageTitle'><span class='icon jqh-angle-right icon-md'/></a>
+              </li>
+            <b:else/>
+              <li class='next'>
+                <a class='active' expr:title='data:blog.title + data:mobileLinkMsg + data:olderPageTitle'>
+                  <span class='icon jqh-angle-right icon-md'/></a>
+              </li>
             </b:if>
             <b:if cond='data:blog.url == data:blog.homepageUrl'>
-             <li><a class='active' expr:title='data:blog.title + data:mobileLinkMsg'><data:homeMsg/></a></li>
+              <li><a class='active' expr:title='data:blog.title + data:mobileLinkMsg'><span class='icon jqh-home icon-md'/></a></li>
             <b:else/>
-             <li><a expr:href='data:blog.homepageUrl' expr:title='data:blog.title  + data:mobileLinkMsg'><data:homeMsg/></a></li>
+              <li><a expr:href='data:blog.homepageUrl' expr:title='data:blog.title  + data:mobileLinkMsg'><span class='icon jqh-home icon-md'/></a></li>
             </b:if>
           </ul>
          </nav>
@@ -801,13 +705,13 @@ footer {padding-top:15px;border-top:1px solid #ddd}
                   </b:if>                      
                  </h5>
                 </div>
-                <div class="media-left">
                   <b:if cond='data:post.thumbnailUrl'>
-                    <img alt='80x80' class='media-object img-thumbnail' expr:src='data:post.thumbnailUrl' expr:title='data:blog.title + &quot; - &quot; + data:blog.post.title + &quot; - thumbnail img&quot;'/>
+                    <div class="media-left">
+                        <img alt='80x80' class='media-object img-thumbnail' expr:src='data:post.thumbnailUrl' expr:title='data:blog.title + &quot; - &quot; + data:blog.post.title + &quot; - thumbnail img&quot;'/>
+                    </div>
                   <b:else/>
-                    <img alt='80x80' class='media-object' data-holder-rendered='true' expr:title='data:blog.title + &quot; - &quot; + data:blog.post.title + &quot; - thumbnail img default&quot;' src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4='/>
+                    <div class="media-left"/>
                   </b:if>
-                </div>
                 <div class="media-body">
                  <span class="text-muted">
                   <b:if cond='data:top.showTimestamp'>
@@ -826,12 +730,7 @@ footer {padding-top:15px;border-top:1px solid #ddd}
             </li>
           <b:else/>
             <div class="mmbb-post-detail">
-             <div class='panel panel-default' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
-              <b:if cond='data:post.firstImageUrl'>
-                <meta expr:content='data:post.firstImageUrl' itemprop='image_url'/>
-              </b:if>
-              <meta expr:content='data:blog.blogId' itemprop='blogId'/>
-              <meta expr:content='data:post.id' itemprop='postId'/>
+             <div class='panel panel-default'>
               <a expr:name='data:post.id'/>
               <b:if cond='data:post.title'>
                <div class="panel-heading"><h4 class="panel-title">    
@@ -876,14 +775,14 @@ footer {padding-top:15px;border-top:1px solid #ddd}
                 </ul>
               </b:if>
 
-              <div class="panel-body"><data:post.body/></div>
+              <div class="panel-body text-justify"><data:post.body/></div>
 
               <div class="panel-footer">
                 <div class="pull-left"><b:include data='post' name='postQuickEdit'/></div>
                 <b:include name="sharelink" data="post"/>
               </div>
 
-              <b:if cond='data:blog.pageType == &quot;item&quot;'>
+              <!--<b:if cond='data:blog.pageType == &quot;item&quot;'>
                <div class="mmbb-postrelated">
                 <h5>Post terkait :</h5>
                 <ul class="list-group">
@@ -892,23 +791,60 @@ footer {padding-top:15px;border-top:1px solid #ddd}
                   <li class="list-group-item"><span class="hidden-xs">&amp;bull;</span> <a href="javascript:;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</a></li>
                   <li class="list-group-item"><span class="hidden-xs">&amp;bull;</span> <a href="javascript:;">Lorem ipsum dolor sit amet, consectetur adipisiciendis.</a></li>
                 </ul>
-               </div>
-              </b:if>
+               </div> 
+              </b:if>-->
              </div> <!-- /.panel post-detail -->
             </div> <!-- /.mmbb-post-detail -->
-            <div class="mmbb-pager mmbb-pager-detail">
-             <b:include name='nextprev'/>
-            </div>
+            <b:if cond='data:blog.pageType == &quot;item&quot;'>
+              <div class="mmbb-pager">
+              <b:include name='nextprev'/>
+              </div>
+            </b:if>
             <b:if cond="data:post.allowComments">
+             <div class='mmbb-disqus'>
               <div class="panel panel-default">
                <div class="panel-heading">
                 <h4 class="panel-title">Kolom komentar Disqus</h4>
                </div>
                <div class="panel-body">
-                 List komentar dan form komentar disquss
-               </div>
-                <div class="panel-footer">Disqus</div>
-              </div>
+                  <script type='text/javascript'>
+                      var disqus_shortname = &#39;mmbb-1&#39;;
+                      var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
+
+                      if (!disqus_blogger_current_url.length) {
+                          disqus_blogger_current_url = &quot;<data:blog.url/>&quot;;
+                      }
+
+                      var disqus_blogger_homepage_url = &quot;<data:blog.homepageUrl/>&quot;;
+                      var disqus_blogger_canonical_homepage_url = &quot;<data:blog.canonicalHomepageUrl/>&quot;;
+                  </script>
+
+                  <b:if cond='data:blog.pageType == &quot;item&quot;'>
+                      <script type='text/javascript'>
+                          (function() {
+                              var bloggerjs = document.createElement(&#39;script&#39;);
+                              bloggerjs.type = &#39;text/javascript&#39;;
+                              bloggerjs.async = true;
+                              bloggerjs.src = &#39;//&#39;+disqus_shortname+&#39;.disqus.com/blogger_item.js&#39;;
+                              (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
+                          })();
+
+                      </script>
+                  </b:if>
+                      <script type='text/javascript'>
+                      (function() {
+                          var bloggerjs = document.createElement(&#39;script&#39;);
+                          bloggerjs.type = &#39;text/javascript&#39;;
+                          bloggerjs.async = true;
+                          bloggerjs.src = &#39;//&#39;+disqus_shortname+&#39;.disqus.com/blogger_index.js&#39;;
+                          (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
+                      })();
+                  </script>
+                <div id='comments'/>
+               </div> <!-- /.panel-body disquss comment -->
+
+               </div> <!-- /.panel disquss -->
+              </div><!-- mmbb-disqus comment -->
             </b:if>
           </b:if>
         </b:includable>
@@ -1195,7 +1131,7 @@ footer {padding-top:15px;border-top:1px solid #ddd}
               <b:loop values='data:labels' var='label'>
                 <li class="text-capitalize">
                   <b:if cond='data:blog.url == data:label.url'>
-                    <a class='btn btn-default btn-xs active' data-placement='top' data-toggle='tooltip' expr:dir='data:blog.languageDirection' href='javascript:;' title='Category terpilih'><data:label.name/></a>
+                    <a class='btn btn-default btn-xs' expr:dir='data:blog.languageDirection' href='javascript:;' title='Category terpilih'><data:label.name/></a>
                   <b:else/>
                     <a class='btn btn-default btn-xs' expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
                   </b:if>
@@ -1206,9 +1142,7 @@ footer {padding-top:15px;border-top:1px solid #ddd}
               </b:loop>
             </ul>
           </div>
-          <div class="panel-footer">
-            <a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a>
-          </div>
+
         </div>
        </div> <!-- /.category -->
       </b:includable>
@@ -1217,42 +1151,46 @@ footer {padding-top:15px;border-top:1px solid #ddd}
         <b:includable id='main'>
          <div class="mmbb-popularpost"><!-- mmbb-popularpost -->
           <div class="panel panel-default">
-            <div class="panel-heading"><h5 class="panel-title"><data:title/></h5></div>
+            <div class="panel-heading"><h4 class="panel-title"><data:title/></h4></div>
               <ul class="list-group">
                 <b:loop values='data:posts' var='post'>
                   <li class="list-group-item">
-                   <div class="media text-muted small">
+                   <div class="media text-muted">
                     <b:if cond='data:showThumbnails == &quot;false&quot;'>
+                     <div class="media-left"/>
+                      <div class='media-body'>
                       <b:if cond='data:showSnippets == &quot;false&quot;'>
                         <!-- (1) No snippet/thumbnail -->
-                  		  <div class='media-body'><h5 class='media-heading'>
+                  		  <h5 class='media-heading'>
                   			 <a expr:href='data:post.href'><data:post.title/></a></h5>
-                  		  </div>
                       <b:else/>
                         <!-- (2) Show only snippets -->
-                        <div class='media-body'>
                           <p><data:post.snippet/><a expr:href='data:post.href'>readmore</a>...</p>
-                        </div>
                       </b:if>
+                      </div>
                       <b:else/>
                         <b:if cond='data:showSnippets == &quot;false&quot;'>
                         <!-- (3) Show only thumbnails -->
-                          <b:if cond='data:post.thumbnail'>
-                            <div class='media-left'>
-                              <a expr:href='data:post.href' target='_blank'>
-                                <img class='media-object img-thumbnail' expr:height='data:thumbnailSize' expr:src='data:post.thumbnail' expr:width='data:thumbnailSize'/>
-                              </a>
-                            </div>								  
-                          </b:if>
+                          <div class='media-left'>
+                            <a expr:href='data:post.href' target='_blank'>
+                              <b:if cond='data:post.thumbnail'>
+                                <img class='media-object img-thumbnail' expr:height='data:thumbnailSize' expr:src='data:post.thumbnail' expr:alt="data:blog.title + &quot;Popular Post Thumb Img&quot;" expr:width='data:thumbnailSize'/>
+                              <b:else/>
+                                <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Thumb \n Images" expr:alt="data:blog.title + &quot;Popular Post Thumb Img&quot;"/>
+                              </b:if>
+                            </a>
+                          </div>
                         <b:else/>
                         <!-- (4) Show snippets and thumbnails -->
-                          <b:if cond='data:post.thumbnail'>
-                            <div class='media-left'>
-                              <a expr:href='data:post.href' target='_blank'>
-                                <img class='media-object img-thumbnail' expr:height='data:thumbnailSize' expr:src='data:post.thumbnail' expr:width='data:thumbnailSize'/>
-                              </a>
-                            </div>
-                          </b:if>
+                          <div class='media-left'>
+                            <a expr:href='data:post.href' target='_blank'>
+                              <b:if cond='data:post.thumbnail'>
+                                <img class='media-object img-thumbnail' expr:height='data:thumbnailSize' expr:src='data:post.thumbnail' expr:alt="data:blog.title + &quot;Popular Post Thumb Img&quot;" expr:width='data:thumbnailSize'/>
+                              <b:else/>
+                                <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Thumb \n Images" expr:alt="data:blog.title + &quot;Popular Post Thumb Img&quot;"/>
+                              </b:if>
+                            </a>
+                          </div>
                           <div class='media-body'>
                             <h5 class='media-heading'>
                               <a expr:href='data:post.href'><data:post.title/></a>
@@ -1265,9 +1203,10 @@ footer {padding-top:15px;border-top:1px solid #ddd}
                   </li>
                 </b:loop>
             </ul>
-            <b:include name='quickedit'/>
-          </div>
-         </div>
+            <!-- <b:include name='quickedit'/> -->
+
+          </div> <!-- /.panel popularpost  -->
+         </div> <!-- /.mmbb-popularpost -->
         </b:includable>
      </b:widget>
     </b:section>
@@ -1281,13 +1220,11 @@ footer {padding-top:15px;border-top:1px solid #ddd}
           <div class="panel-heading"><h4 class="panel-title"><data:title/></h4></div>
           <div class="panel-body">
             <ul class="list-unstyled">
-              <li>&amp;bull; <a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a></li>
+              <li>&amp;bull; <a href='http://mmbbproject.github.io/' target='_blank'>MMBB Template</a></li>
               <li>&amp;bull; <a href="http://github.com/mmbbproject/mmbb" target="_blank">github.com/mmbbproject/mmbb</a></li>
             </ul>
           </div>
-          <div class="panel-footer">
-            <a href="http://jqueryholic.blogspot.co.id" target="_blank">jQueryHolic</a>
-          </div>
+
         </div>
        </div>
       </b:includable>
@@ -1301,7 +1238,10 @@ footer {padding-top:15px;border-top:1px solid #ddd}
            <div class="thumbnail">
             <b:if cond='data:photo.url != &quot;&quot;'>
              <a expr:href='data:userUrl'><img class='img-circle' expr:alt='data:messages.myPhoto' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/></a>
+            <b:else/>
+             <a expr:href='data:userUrl'><img class='img-circle' alt='Author Profile Photo' height='80' src='holder.js/80x80?text=No \n Profile \n Img' width='80'/></a>            
             </b:if>
+
             <div class="caption small">
               <h5>
                 <a class='profile-name-link' expr:href='data:userUrl' rel='author'>
@@ -1311,9 +1251,7 @@ footer {padding-top:15px;border-top:1px solid #ddd}
             </div>
            </div>
           </div>
-          <div class="panel-footer">
-            <a href="javascript:;" class="jqh-link" target="_blank"><span class='icon jqh-twitter icon-md'/></a>
-          </div>
+
         </div>
        </div>
       </b:includable>
@@ -1322,16 +1260,18 @@ footer {padding-top:15px;border-top:1px solid #ddd}
    </div><!-- /.sidebar2 col- widgets -->
   </div> <!-- /.row container -->
 </div><!-- /.Container --> 
-
   
-<footer>
-<div class='container'>
-<p>Copyleft &amp;copy; 2017 <a href='http://twitter.com/ox69xo' target='_blank'>ox69xo</a> &amp;middot; <a href='http://jqueryholic.blogspot.co.id/' target='_blank'>MMBB Project blog</a>
-<span><span class="hidden-lg hidden-md">&amp;middot;</span> Powered by <a href='https://blogger.com' target='_blank'>Blogger</a>.</span>
-</p>
-</div>
+<footer itemscope='itemscope' itemtype='http://schema.org/WPFooter'>
+  <div class='container' itemprop='creator' itemscope='itemscope' itemtype='http://schema.org/Person'>
+    Copyleft &amp;copy; 2017 <data:blog.title/> &amp;middot; <a href='https://mmbbproject.github.io' target='_blank'>MMBB Template</a> Design by <a href='https://jqueryholic.blogspot.co.id' itemprop='url' target='_blank'><span itemprop='name'>ox69xo</span></a><br />
+      Powered by <a href='http://blogger.com' target='_blank'>Blogger</a>
+  </div>
 </footer>
-
-	<script src='https://cdn.rawgit.com/seujungkuku/own/04999ef0/collapse.min.js'/>
-  </body>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' type='text/javascript'/>
+<script src='https://cdn.rawgit.com/seujungkuku/own/04999ef0/collapse.min.js' type='text/javascript'/>
+<script src='https://cdn.rawgit.com/seujungkuku/own/ebc96cf0/holder.min.js' type='text/javascript'/>
+<script type='text/javascript'>var icon_blogger = true;</script>
+<script src='https://cdn.rawgit.com/seujungkuku/own/a5f6c3cd/mmbb.enc.min.js' type='text/javascript'/>
+<!--   </body> -->
+&lt;!---</body>---&gt;&lt;/body&gt;
 </html>

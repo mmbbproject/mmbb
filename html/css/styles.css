@@ -1,21 +1,20 @@
 #navbar-iframe{display:none}
 body {
   padding-top:51px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   background-color: #f8f8f8;
   font-family:sans-serif;
 }
 hr {margin-top:0;margin-bottom:0}
 a, a:hover, a:focus {transition:.5s;text-decoration:none;}
 h1,h2,h3,h4 {font-weight:300}
-.jumbotron {padding:15px;margin-bottom: 10px}
+/*.jumbotron {padding:15px;margin-bottom: 10px}*/
 #mmbb-header, #mmbb-main, #mmbb-sidebar1 , #mmbb-sidebar2 {padding:6px;}
 /* reset Style status msg body */
 .status-msg-border {display: none}
 .status-msg-body {position:relative;padding:0px;margin:-5px;}
 #mmbb-header {padding-bottom:0}
 #mmbb-header .breadcrumb {margin-bottom:0;border:1px solid #ddd;}
-#mmbb-main .pager{margin-top:-5px;} /*margin-top -5px untuk home jarak ke widget */
 
 #mmbb-main > .list-group {margin-bottom:6px;} 
 
@@ -23,11 +22,15 @@ h1,h2,h3,h4 {font-weight:300}
 #mmbb-sidebar1 .widget .panel, #mmbb-sidebar2 .widget .panel {margin-bottom:8px}
 
 #mmbb-main .panel-body {padding:8px}
+.mmbb-pager{margin-top:-8px;} /*margin-top -5px untuk home jarak ke widget */
+#mmbb-main > .list-group + .mmbb-pager {margin-top: 20px}
+.mmbb-disqus {margin-top:13px}
+.panel-footer {text-align: center}
+.mmbb-popularpost .list-group-item {padding:8px 5px 8px 8px}
+.mmbb-popularpost .media-body p{margin-bottom:0}
+.mmbb-popularpost .media-left {padding-right:8px}
+.mmbb-popularpost .media-left img,.mmbb-home-post .media-left img{height:80px;width:80px;}
 
-#mmbb-sidebar1 .panel-footer, #mmbb-sidebar2 .panel-footer {text-align: center}
-.mmbb-popularpost .list-group-item {padding:10px 5px 0px 8px}
-.mmbb-popularpost .list-group-item .media{margin-bottom:-3px;margin-top:-2px;}
-.mmbb-home-post .media-left img{width:80px;height:80px;}
 .mmbb-home-post .media{margin:-5px;margin-bottom: 0}
 .mmbb-category .panel-body {padding-bottom:0;}
 .mmbb-category .list-inline li {margin-bottom:5px;padding:0;}
@@ -35,11 +38,13 @@ h1,h2,h3,h4 {font-weight:300}
 .mmbb-post-detail .panel-body {padding-bottom: 0}
 .mmbb-post-detail .panel-heading {padding-left:8px }
 .mmbb-post-detail > .panel .list-group .list-group-item {padding:8px;}
-.mmbb-post-detail .panel-footer{border-radius: 0;border-bottom: 1px solid #ddd;padding-right:8px;}
-.mmbb-postrelated > h5 {margin-left: 8px;margin-bottom:0;}
+.mmbb-post-detail .panel-footer{/*border-radius: 0;border-bottom: 1px solid #ddd;*/padding-right:10px;}
+/* .mmbb-postrelated > h5 {margin-left: 8px;margin-bottom:0;}
 .mmbb-postrelated .list-group{margin-bottom: 0}
 .mmbb-postrelated .list-group-item {border-radius: 0;border:none;padding-left:10px;}
 .mmbb-postrelated .list-group-item:not(:first-child){border-top:1px solid #ddd;}
+.mmbb-postrelated .list-group-item:last-child{border-radius:0 0 4px 4px} */
+
 .mmbb-author .thumbnail {padding-top:8px;margin-bottom:0;}
 
 .jqh-sharing h5{display:inline-block;margin:0;padding-right:10px;color:#777;}
@@ -84,22 +89,28 @@ h1,h2,h3,h4 {font-weight:300}
 .jqh-sharing-colored a .jqh-twitter-square{color:#1DA1F2}
 
 .jqh-sharing-colored a:hover .icon{color:#bbb;}
-.jqh-link .icon {color:#bbb}
-.mmbb-pager a.active {color: #bbb; background-color: #eee;cursor:default}
+.jqh-link .icon, .jqh-link svg {color:#bbb}
+svg{position:relative;fill:currentColor;vertical-align: -12.44444%}
+.mmbb-blogroll .panel-body {padding:10px 10px 3px 10px}
 
-.mmbb-blogroll .panel-body {padding:10px 10px 3px 10px;}
 footer {padding-top:15px;border-top:1px solid #ddd}
 @media (min-width:768px){
+  .mmbb-disqus {margin-bottom: -18px}
+  .mmbb-popularpost .media {font-size:90%}
   #mmbb-header, #mmbb-main, #mmbb-sidebar1 , #mmbb-sidebar2 {padding:3px}
   #mmbb-header {padding-top: 6px}
   footer {margin-top:10px;}
-  footer span {float:right;}
+  footer .flast {float:right;}
 }
+/*@media (max-width:991px){}*/
 @media (min-width:767px){
 #mmbb-main .pager{margin-bottom:8px} /*margin-top -5px untuk home jarak ke widget */	
 }
 @media (max-width:767px){
+.mmbb-disqus {margin-bottom: -24px}
+.breadcrumb, .mmbb-popularpost, .mmbb-home-post {line-height:1.3em;}
+.mmbb-category .btn{padding:1px 5px;font-size:100%;}  
 #mmbb-main .pager{margin-bottom:1px} /*margin-top -5px untuk home jarak ke widget */	
 #mmbb-sidebar2 .widget:first-of-type {margin-top: -12px}	
- footer {text-align:center}
+ footer, footer .col-xs-12 {text-align:center}
 }

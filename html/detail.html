@@ -14,12 +14,12 @@
     <!-- Bootstrap tanpa glyphicon, jumbotron dan well -->    
     <link href="css/bootstrap.custom.min.css" rel="stylesheet"> 
     <link href="css/mmbb.font.min.css" rel="stylesheet">
-<!--     <link href="css/widget_css_bundle.css.css" rel="stylesheet"> -->
     <link href="css/styles.css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <!-- hanya memakai collapse Bootstrap -->
-    <script type="text/javascript" src="js/collapse.js"></script>
-<!-- https://cdn.rawgit.com/seujungkuku/own/04999ef0/collapse.min.js     -->
+    <style> 
+    /* style hanya untuk demo image */
+    .mmbb-post-detail img.pull-left {margin-right:5px;}
+    .mmbb-post-detail img.pull-right {margin-left:5px;}
+    </style>
   </head>
 
   <body>
@@ -38,9 +38,9 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="javascript:;">Home</a></li>
-                <li><a href="javascript:;">About</a></li>
+            <ul class="nav navbar-nav" id="mmbb-headermenu">
+                <li><a href="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/detail.html">Home</a></li>
+                <li><a href="file:///D:/Docs/MMBB/template/html/home.html">About</a></li>
                 <li><a href="javascript:;">Contact</a></li>
             </ul>
             <form action='/search' class='navbar-form navbar-right' method='get' role='search'>
@@ -72,12 +72,13 @@
 <ol class="breadcrumb">
   <li><a href="#">Home</a></li>
   <li><a href="#">Library</a></li>
-  <li class="active">Data</li>
+  <li><a href="#">Other</a></li>
+  <li class="active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, consequatur optio excepturi culpa accusantium ducimus adipisci,</li>
 </ol>
 
   </div>
 
-  <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-md-push-4 col-md-push-4" id="mmbb-main">
+  <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" id="mmbb-main">
    <div class="mmbb-post-detail"><!-- online -->
     <div class="panel panel-default">
       <div class="panel-heading"><h4 class="panel-title">Lorem ipsum dolor sit amet, consectetur adipisicing</h4></div>
@@ -95,14 +96,15 @@
           <a href="javascript:;">PHP</a>
        </li>
       </ul>
-      <div class="panel-body">
-<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius alias aspernatur rerum blanditiis ab quod officia quis velit fugiat, sint praesentium nam sed, repellendus pariatur porro veritatis saepe. Quaerat, vitae.</div>
-<div>Voluptatem, enim, sint! Id blanditiis laboriosam, libero magnam, nam nesciunt minus natus quae similique. Deleniti accusantium odio voluptatibus asperiores harum mollitia, maxime placeat, temporibus optio facilis distinctio dolore quas architecto.</div>
-<div>Quos excepturi voluptates commodi dignissimos nostrum, alias eveniet eum quia porro blanditiis placeat iste quaerat, assumenda quasi nobis ad a totam, explicabo veritatis quis possimus id error neque delectus? Repudiandae.</div>
-<div>Natus, rerum sed unde ipsum itaque illum quis, consectetur in reiciendis, temporibus incidunt voluptatem. Quis odio assumenda vitae exercitationem. Nisi repellendus tempore accusamus id officiis, aliquam omnis sit impedit minus?</div>
-<div>Officiis error nemo dolorum ea est ullam, commodi harum asperiores beatae! Id alias hic adipisci iure voluptatem repudiandae ipsa nihil atque officiis assumenda quo quidem, facere quam animi delectus. Libero.</div>
-<div>Ipsa eveniet dolor officiis, repellendus, reiciendis porro, odit optio quisquam soluta dolorum libero suscipit magni in praesentium a nam pariatur sed voluptate autem voluptas esse aspernatur vel tenetur. Esse, rem.</div>
-<div>Error quis provident voluptatibus sit, eos consectetur iste aut id earum fugiat tenetur totam quam. Consequuntur dolore minus ullam fugit nam, ea similique voluptates dolor eveniet odio et sequi reiciendis.</div>
+      <div class="panel-body text-justify">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cum adipisci illum, repellat beatae rem placeat dolores incidunt, inventore laudantium atque velit expedita nesciunt fuga vitae consectetur dolorem voluptate, nostrum.</p>
+        <p><img class="img-rounded pull-left" src="holder.js/80x80?theme=social&text=Image" alt="thumb"/>Voluptate blanditiis quo, sint dicta atque mollitia nostrum hic ex officiis reiciendis veniam, minima aliquid! Voluptate delectus, ut incidunt et natus molestias ex tenetur perferendis at consectetur nisi magni possimus.</p>
+        <p>Accusantium sit numquam aliquam illo pariatur temporibus, cupiditate, in dolor inventore, commodi ex modi nobis, magni reprehenderit optio laboriosam enim? Blanditiis excepturi aspernatur labore quae voluptatibus fugit, id doloremque tempora!</p>
+        <p>Perspiciatis vel repudiandae velit, porro amet illo quisquam delectus vitae, ullam aspernatur debitis? Similique, magnam, impedit. Expedita nisi, quisquam laudantium reprehenderit architecto libero, commodi, aut amet veritatis eveniet obcaecati consequatur.</p>
+        <p>Dignissimos mollitia odio, repudiandae cupiditate ratione sint esse porro vel maxime expedita a autem neque excepturi ducimus, dolor necessitatibus incidunt distinctio,<img class="img-rounded pull-right" src="holder.js/80x80?theme=vine&text=Image" alt="thumb"/> commodi animi illo nihil placeat iusto harum. Error, perspiciatis!.
+        Eius ipsum, pariatur nesciunt cum voluptatem doloremque earum eveniet omnis magnam modi aliquam, labore ipsam, consectetur velit voluptatum quisquam ea provident temporibus voluptatibus laudantium voluptates dolorem? Magnam perferendis voluptas voluptatibus.</p>
+        <p>Natus maxime distinctio officia vero praesentium minima deserunt ab soluta porro nam quaerat veniam fugiat voluptates consequuntur et numquam, expedita accusamus illum sapiente modi. Quos ullam vitae dolore laboriosam cum.</p>
+        <p>Mollitia animi laboriosam iusto vitae distinctio sint deserunt culpa a similique dolores reiciendis itaque sapiente maiores repellat omnis id accusantium quos saepe, vero quis consequatur excepturi in minus, fuga? Fugiat!</p>
       </div> <!-- /.panel-body /.post-detail -->
       <div class="panel-footer">
          <div class="jqh-sharing text-muted">
@@ -121,16 +123,16 @@
          <div class="clearfix"></div>
         </div>
       </div><!-- /.panel-footer -->
-      <div class="mmbb-postrelated">
-        <h5>Post terkait</h5>
-        <ul class="list-group">
-          <li class="list-group-item"><span class="hidden-xs">&bull;</span> <a href="javascript:;">lorem it. Quos, quaerat? Atque nulla, eos ipsum, omn</a></li>
-          <li class="list-group-item"><span class="hidden-xs">&bull;</span> <a href="javascript:;">etium architecto amet expedita rem, quam, del</a></li>
-          <li class="list-group-item"><span class="hidden-xs">&bull;</span> <a href="javascript:;">lorem cusandae a perspiciatis adipisci accusan</a></li>
-          <li class="list-group-item"><span class="hidden-xs">&bull;</span> <a href="javascript:;">Lorem ipsum dolor sit amet, consectetur adipisiciendis.</a></li>
-        </ul>
-      </div>
-    </div>  <!-- /. panel post-detail   -->
+<!--       <div class="mmbb-postrelated">
+  <h5>Post terkait</h5>
+  <ul class="list-group">
+    <li class="list-group-item"><span class="hidden-xs">&bull;</span> <a href="javascript:;">lorem it. Quos, quaerat? Atque nulla, eos ipsum, omn</a></li>
+    <li class="list-group-item"><span class="hidden-xs">&bull;</span> <a href="javascript:;">etium architecto amet expedita rem, quam, del</a></li>
+    <li class="list-group-item"><span class="hidden-xs">&bull;</span> <a href="javascript:;">lorem cusandae a perspiciatis adipisci accusan</a></li>
+    <li class="list-group-item"><span class="hidden-xs">&bull;</span> <a href="javascript:;">Lorem ipsum dolor sit amet, consectetur adipisiciendis.</a></li>
+  </ul>
+</div> -->
+    </div>  <!-- /. panel post-detail  -->
    </div> <!-- /.mmbb-post-detail -->
   <div class="mmbb-pager">
    <nav aria-label="Pager">
@@ -141,29 +143,30 @@
     </ul>
    </nav>
   </div>
-
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h4 class="panel-title">Kolom komentar Disqus</h4>
+  <div class="mmbb-disqus">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">Kolom komentar Disqus</h4>
+      </div>
+      <div class="panel-body">tetur adipisicing elit. Alias consequuntur, atque perspiciatis quidem non sint, officiis, voluptatem recusandae eaque facere soluta, pariatur consequatur eos porro cum a fugit doloribus aliquam.</div>
+      <div class="panel-footer">Disqus</div>
+    </div>
   </div>
-  <div class="panel-body">tetur adipisicing elit. Alias consequuntur, atque perspiciatis quidem non sint, officiis, voluptatem recusandae eaque facere soluta, pariatur consequatur eos porro cum a fugit doloribus aliquam.</div>
-  <div class="panel-footer">Disqus</div>
-</div>
   </div> <!-- /.mmbb-main /.post-detail -->
 
-  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-md-pull-5 col-lg-pull-5" id="mmbb-sidebar1">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="mmbb-sidebar1">
    <div class="widget mmbb-category"><!-- online -->
     <div class="panel panel-default">
       <div class="panel-heading"><h4 class="panel-title">Category</h4></div>
       <div class="panel-body">
         <ul class="list-inline text-capitalize">
-        <li><a class='btn btn-default btn-xs disabled' href="javascript:;">Category label</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:;">Category label2</a></li>
+        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">Category label</a></li>
+        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">Category label2</a></li>
         <li><a class='btn btn-default btn-xs active' href="javascript:;" data-toggle="tooltip" data-placement="top" title="Category terpilih">Categy Name</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:;">egory Name</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:;" data-toggle="tooltip" data-placement="top" title="Category terpilih">ery Name</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:;">egory Nme</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:;">egory te me</a></li>
+        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">egory Name</a></li>
+        <li><a class='btn btn-default btn-xs' href="javascript:void(0);" data-toggle="tooltip" data-placement="top">ery Name</a></li>
+        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">egory Nme</a></li>
+        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">egory te me</a></li>
         </ul>
       </div>
       <div class="panel-footer">
@@ -177,50 +180,50 @@
       <div class="panel-heading"><h5 class="panel-title">Popular Post</h5></div>
         <ul class="list-group">
           <li class="list-group-item">
-          <div class="media text-muted small">          
+          <div class="media text-muted">
             <div class="media-left">
-              <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
+              <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
             <h5 class="media-heading text-justify"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip [<a href='javascript:;'>...readmore..</a>]</p>
+              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
             </div>
           </div>
           </li> 
           <li class="list-group-item">
-          <div class="media text-muted small">          
+          <div class="media text-muted">          
             <div class="media-left">
-              <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
+              <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
             <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip [<a href='javascript:;'>...readmore..</a>]</p>
+              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
             </div>
           </div>
           </li> 
           <li class="list-group-item">
-          <div class="media text-muted small">          
+          <div class="media text-muted">          
             <div class="media-left">
-              <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
+              <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
-            <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
+            <h5 class="media-heading"><a href='file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/detail.html'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip [<a href='javascript:;'>...readmore..</a>]</p>
+              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
             </div>
           </div>
           </li>
           <li class="list-group-item">
-          <div class="media text-muted small">          
+          <div class="media text-muted">          
             <div class="media-left">
-              <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
+              <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
             <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip [<a href='javascript:;'>...readmore..</a>]</p>
+              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
             </div>
           </div>
           </li>                 
@@ -254,7 +257,7 @@
       <div class="panel-heading"><h4 class="panel-title">About me</h4></div>
       <div class="panel-body text-center">
        <div class="thumbnail">
-        <img class="img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="...">
+        <img class="media-object img-circle" src="holder.js/80x80?theme=sky&text=Profile \n Img" alt="thumb"/>
         <div class="caption small">
           <h5><a href="javascript:;">Author name</a></h5>
           Author Description Lorem ipsum dolor sit amet, consect
@@ -271,13 +274,16 @@
  </div><!-- /.main row -->
 </div> <!-- /.container -->
 
-
 <footer>
-<div class='container'>
-<p>Copyleft &copy; 2017 <a href='http://twitter.com/ox69xo' target='_blank'>ox69xo</a> &middot; <a href='http://jqueryholic.blogspot.co.id/' target='_blank'>MMBB Project blog</a>
-<span><span class="hidden-lg hidden-md">&middot;</span> Hosted by <a href='http://github.com' target='_blank'>Github</a>.</span>
-</p>
-</div>
+  <div class='container'>
+      Copyleft &copy; 2017 Your Blog &middot; <a href='http://mmbbproject.github.io/' target='_blank'>MMBB Template</a> Design by <a href='http://jqueryholic.blogspot.co.id' target='_blank'>ox69xo</a><br />
+      Powered by <a href='http://blogger.com' target='_blank'>Blogger</a>
+  </div>
 </footer>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/holder.min.js"></script>
+<script type="text/javascript" src="js/collapse.js"></script>
+<script type='text/javascript'>var icon_blogger = true;</script>
+<script type="text/javascript" src="../../mmbb.js"></script>
   </body>
 </html>

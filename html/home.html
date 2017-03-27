@@ -15,10 +15,7 @@
     <link href="css/bootstrap.custom.min.css" rel="stylesheet">
     <link href="css/mmbb.font.min.css" rel="stylesheet">    
     <link href="css/styles.css" rel="stylesheet"> 
-    <!-- <link href="css/widget_css_bundle.css" rel="stylesheet">  -->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <!-- hanya memakai collapse Bootstrap -->
-    <script type="text/javascript" src="js/collapse.js"></script>
+    
   </head>
 
   <body>
@@ -37,10 +34,11 @@
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="javascript:;">Home</a></li>
-                <li><a href="javascript:;">About</a></li>
+            <ul class="nav navbar-nav" id="mmbb-headermenu">
+                <li><a href="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/home.html">Home</a></li>
+                <li><a href="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/detail.html">About</a></li>
                 <li><a href="javascript:;">Contact</a></li>
+               
             </ul>
             <form action='/search' class='navbar-form navbar-right' method='get' role='search'>
               <div class='input-group'>
@@ -69,20 +67,18 @@
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mmbb-header">
 
 <ol class="breadcrumb">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Library</a></li>
-  <li class="active">Data</li>
+  <li class="active"><a href="#">Home</a></li>
 </ol>
 
   </div>
 
-  <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-md-push-4 col-md-push-4" id="mmbb-main">
+  <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" id="mmbb-main">
    <ul class="list-group"> <!-- Status msg -->
      <li class="list-group-item">
 
 
       <div class="status-msg-body">
-    sssssTampilkan posting dengan label <b>label 3</b>. <a href="http://ip3web.blogspot.com/">Tampilkan semua posting</a>
+        Tampilkan posting dengan label <b>label 3</b>. <a href="http://ip3web.blogspot.com/">Tampilkan semua posting</a>
       </div>
     </li>
    </ul><!--  /.status msg -->
@@ -94,12 +90,10 @@
         <div class="media-title">
           <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
         </div>
-        <div class="media-left">
-          <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
-        </div>
+        <div class="media-left"></div>
         <div class="media-body">
           <span class="text-muted"><span class="icon jqh-calendar"></span> 11 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein </span> &middot; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Utquip [<a href='javascript:;'>...readmore..</a>] 
+          tempor incididunt ut labore et dolore magna aliqua. Utquip...<a href='javascript:;'>readmore</a>... 
         </div>
       </div>
       </li>
@@ -111,13 +105,13 @@
           tempor incididunt ut labore et dolore magna </a></h5>
         </div>
         <div class="media-left">
-          <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt=""> 
+          <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images"/> 
 
         </div>
         <div class="media-body">
           <span class="text-muted"><span class="icon jqh-calendar"></span> 11 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein </span> &middot; Lorem ipsctetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip [<a href='javascript:;'>...readmore..</a>] 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip...<a href='javascript:;'>readmore</a>... 
         </div>
       </div>
       </li>
@@ -127,12 +121,10 @@
         <div class="media-title">
           <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius</a></h5>
         </div>
-        <div class="media-left">
-          <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
-        </div>
+        <div class="media-left"></div>
         <div class="media-body">
           <span class="text-muted"><span class="icon jqh-calendar"></span> 11 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein &middot; </span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Utquip [<a href='javascript:;'>...readmore..</a>]
+          tempor incididunt ut labore et dolore magna aliqua. Utquip...<a href='javascript:;'>readmore</a>...
         </div>
       </div>
       </li>
@@ -144,13 +136,13 @@
           tempor incididunt ut labore et dolore magna </a></h5>
         </div>
         <div class="media-left">
-          <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt=""> 
+          <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images"/>
 
         </div>
         <div class="media-body">
           <span class="text-muted"><span class="icon jqh-calendar"></span> 11 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein </span> &middot; Lorem ipsctetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip [<a href='javascript:;'>...readmore..</a>]
+          quis nostrud exercitation ullamco laboris nisi ut aliquip...<a href='javascript:;'>readmore</a>...
         </div>
       </div>
       </li>
@@ -162,11 +154,11 @@
           tempor incididunt ut labore et dolore magna </a></h4>
         </div>
         <div class="media-left media-middle">
-          <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
+          <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images"/>
         </div>
         <div class="media-body">
           <span class="text-muted"><span class="icon jqh-calendar"></span> 11 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein </span> &middot; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Utquip [<a href='javascript:;'>...readmore..</a>]
+          tempor incididunt ut labore et dolore magna aliqua. Utquip...<a href='javascript:;'>readmore</a>...
         </div>
       </div>
       </li>
@@ -178,13 +170,13 @@
           tempor incididunt ut labore et dolore magna </a></h5>
         </div>
         <div class="media-left media-middle">
-          <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt=""> 
+          <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images"/>
 
         </div>
         <div class="media-body">
-          <span class="text-muted"><span class="icon jqh-calendar"></span> 11 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein </span> &middot; Lorem ipsctetur adipisicing elit, sed do eiusmod
+          <span class="text-muted"><span class="icon jqh-calendar"></span> 111 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein </span> &middot; Lorem ipsctetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip [<a href='javascript:;'>...readmore..</a>]
+          quis nostrud exercitation ullamco laboris nisi ut aliquip...<a href='javascript:;'>readmore</a>...
         </div>
       </div>
       </li>            
@@ -201,19 +193,19 @@
    </div>
   </div> <!-- /.mmbb-main -->
 
-  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-md-pull-5 col-lg-pull-5" id="mmbb-sidebar1">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="mmbb-sidebar1">
    <div class="widget mmbb-category"><!-- online -->
     <div class="panel panel-default">
       <div class="panel-heading"><h4 class="panel-title">Category</h4></div>
       <div class="panel-body">
         <ul class="list-inline text-capitalize">
-        <li><a class='btn btn-default btn-xs disabled' href="javascript:;">Category label</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:;">Category label2</a></li>
-        <li><a class='btn btn-default btn-xs active' href="javascript:;" data-toggle="tooltip" data-placement="top" title="Category terpilih">Categy Name</a></li>
+        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">Category label</a></li>
+        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">Category label2</a></li>
+        <li><a class='btn btn-default btn-xs' href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Category terpilih">Categy Name</a></li>
         <li><a class='btn btn-default btn-xs' href="javascript:;">egory Name</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:;" data-toggle="tooltip" data-placement="top" title="Category terpilih">ery Name</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:;">egory Nme</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:;">egory te me</a></li>
+        <li><a class='btn btn-default btn-xs' href="javascript:void(0)" data-toggle="tooltip" data-placement="top">ery Name</a></li>
+        <li><a class='btn btn-default btn-xs' href="javascript:void(0)">egory Nme</a></li>
+        <li><a class='btn btn-default btn-xs' href="javascript:void(0)">egory te me</a></li>
         </ul>
       </div>
       <div class="panel-footer">
@@ -224,53 +216,49 @@
 
    <div class="widget mmbb-popularpost"><!-- mmbb-popularpost -->
     <div class="panel panel-default">
-      <div class="panel-heading"><h5 class="panel-title">Popular Post</h5></div>
+      <div class="panel-heading"><h4 class="panel-title">Popular Post</h4></div>
         <ul class="list-group">
-          <li class="list-group-item disabled">
-          <div class="media text-muted small">          
-            <div class="media-left">
-              <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
-            </div>
+          <li class="list-group-item">
+          <div class="media text-muted">          
+            <div class="media-left"></div>
             <div class="media-body">
-            <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
+            <h5 class="media-heading"><a href='file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/home.html'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip [<a href='javascript:;'>...readmore..</a>]</p>
+              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
             </div>
           </div>
           </li> 
           <li class="list-group-item">
-          <div class="media text-muted small">          
-            <div class="media-left">
-              <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
-            </div>
+          <div class="media text-muted">          
+            <div class="media-left"></div>
             <div class="media-body">
             <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip [<a href='javascript:;'>...readmore..</a>]</p>
+              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
             </div>
           </div>
           </li> 
           <li class="list-group-item">
-          <div class="media text-muted small">          
+          <div class="media text-muted">          
             <div class="media-left">
-              <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
+              <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
             <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip [<a href='javascript:;'>...readmore..</a>]</p>
+              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
             </div>
           </div>
           </li>
           <li class="list-group-item">
-          <div class="media text-muted small">          
+          <div class="media text-muted">          
             <div class="media-left">
-              <img class="media-object img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="">
+               <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
             <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip [<a href='javascript:;'>...readmore..</a>]</p>
+              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
             </div>
           </div>
           </li>                 
@@ -304,15 +292,12 @@
       <div class="panel-heading"><h4 class="panel-title">About me</h4></div>
       <div class="panel-body text-center">
        <div class="thumbnail">
-        <img class="img-thumbnail" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWE3OTFlZDZiYiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1YTc5MWVkNmJiIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiPjwvcmVjdD48Zz48dGV4dCB4PSIxNCIgeT0iMzYuOCI+NjR4NjQ8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" alt="...">
+        <img class="img-circle" src="holder.js/80x80?theme=sky&text=Profile \n Img"/>
         <div class="caption small">
           <h5><a href="javascript:;">Author name</a></h5>
           Author Description Lorem ipsum dolor sit amet, consect
         </div>
        </div>
-      </div>
-      <div class="panel-footer">
-        <a href="javascript:;" class="jqh-link" target="_blank"><span class="icon jqh-twitter icon-md"></span></a>
       </div>
     </div>
    </div> 
@@ -321,13 +306,16 @@
  </div><!-- /.main row -->
 </div> <!-- /.container -->
 
-
 <footer>
-<div class='container'>
-<p>Copyleft &copy; 2017 <a href='http://twitter.com/ox69xo' target='_blank'>ox69xo</a> &middot; <a href='http://jqueryholic.blogspot.co.id/' target='_blank'>MMBB Project blog</a>
-<span><span class="hidden-lg hidden-md">&middot;</span> Hosted by <a href='http://github.com' target='_blank'>Github</a>.</span>
-</p>
-</div>
+  <div class='container'>
+      Copyleft &copy; 2017 Your Blog &middot; <a href='http://mmbbproject.github.io/' target='_blank'>MMBB Template</a> Design by <a href='http://jqueryholic.blogspot.co.id' target='_blank'>ox69xo</a><br />
+      Powered by <a href='http://blogger.com' target='_blank'>Blogger</a>
+  </div>
 </footer>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/holder.min.js"></script>
+<script type="text/javascript" src="js/collapse.js"></script>
+<script type='text/javascript'>var icon_blogger = false;</script>
+<script type="text/javascript" src="../../mmbb.js"></script>
   </body>
 </html>
