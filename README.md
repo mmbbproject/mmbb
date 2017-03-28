@@ -14,7 +14,4 @@ Template Blogger di buat menggunakan [Bootstrap](https://getbootstrap.com "Get B
 - Kembali ke Browser, paste di halaman *Edit HTML*.
 - Save.
 
-[Lihat selengkapnya di Google](https://www.google.co.id/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cara+mengganti+template+blogger&* "Pemasangan template Blogger")
-[Demo](http://ip3web.blogspot.com "Demo MMBB Template blogger")
-[Tips & trick](http://jqueryholic.blogspot.com "Personal Blog")
-[Website](http://mmbbproject.github.io "Webpage MMBB Template")
+[Lihat selengkapnya di Google](https://www.google.co.id/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cara+mengganti+template+blogger&* "Pemasangan template Blogger") # [Demo](http://ip3web.blogspot.com "Demo MMBB Template blogger") # [Tips & trick](http://jqueryholic.blogspot.com "Personal Blog") # [Website](http://mmbbproject.github.io "Webpage MMBB Template")
