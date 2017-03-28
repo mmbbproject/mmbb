@@ -6,7 +6,7 @@
     
     <b:include data='blog' name='all-head-content'/>
 
-    <link href="https://3.bp.blogspot.com/-Ij3_NglHPq0/WNmfdFA-X6I/AAAAAAAAA0k/aq9noo3vs5cHNBc_tggTfv0xPCNCO9fpACLcB/s1600/mmbb-icon.ico" rel="icon" type="image/x-icon"/>
+    <link href="https://2.bp.blogspot.com/-4eIVpEKDR-8/WNqest-gViI/AAAAAAAAA00/BDdnhAg-K6E80E_SxSsJXE9g971KYWPmwCLcB/s1600/mmbb-icon.ico" rel="icon" type="image/x-icon"/>
 
   	<b:if cond='data:blog.pageType == &quot;item&quot;'>
   	 <title><data:blog.pageName/> | <data:blog.title/></title>
@@ -18,6 +18,7 @@
   	<b:if cond='data:blog.pageType == &quot;label&quot;'>
   	 <title><data:blog.pageName/> | <data:blog.title/></title>
   	</b:if>
+
   <link href='https://cdn.rawgit.com/seujungkuku/own/4cf59d15/bootstrap.custom.mmbb.min.css' rel='stylesheet'/> 
   <link href='https://cdn.rawgit.com/seujungkuku/own/f9710b3c/mmbb.icon.min.css' rel='stylesheet' type='text/css'/>
   
@@ -32,11 +33,12 @@ Minimalist Modern Bootstrap Blogger Template
 Name				: MMBB Template
 Version     : 1.0
 Author			: ox69xo
-Author URL	: http://jqueryholic.blogspot.co.id/
-Date				: Feb, 2017
+Author URL	: https://jqueryholic.blogspot.co.id/
+Date				: Maret, 2017
 Twitter     : ox69xo
-Web Project : http://mmbbproject.github.io
-Development : http://github.com/mmbbproject/mmbb
+Download    : https://github.com/mmbbproject/mmbb/blob/master/mmbb.v1.min.zip
+Web Project : https://mmbbproject.github.io
+Development : https://github.com/mmbbproject/mmbb
 -----------------------------------------------
 License:
 Baca: http://github.com/mmbbproject/mmbb/README.md
@@ -45,7 +47,7 @@ Juga wajib menambahkan informasi author (ox69xo) dihalaman bawah blog lengkap de
 
 Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fontastic.me.
 ----------------------------------------------- */
-#navbar-iframe{display:none}body{padding-top:51px;padding-bottom:10px;background-color:#f8f8f8;font-family:sans-serif}hr{margin-top:0;margin-bottom:0}a,a:hover,a:focus{transition:.5s;text-decoration:none}h1,h2,h3,h4{font-weight:300}#mmbb-header,#mmbb-main,#mmbb-sidebar1,#mmbb-sidebar2{padding:6px}.status-msg-border{display:none}.status-msg-body{position:relative;padding:0;margin:-5px}#mmbb-header{padding-bottom:0}#mmbb-header .breadcrumb{margin-bottom:0;border:1px solid #ddd}#mmbb-main>.list-group{margin-bottom:6px}.mmbb-home-post .list-group-item .media-title>h5{line-height:1.3em;margin:0 0 5px 0}#mmbb-sidebar1 .widget .panel,#mmbb-sidebar2 .widget .panel{margin-bottom:8px}#mmbb-main .panel-body{padding:8px}.mmbb-pager{margin-top:-8px}#mmbb-main>.list-group+.mmbb-pager{margin-top:20px}.mmbb-disqus{margin-top:13px}.panel-footer{text-align:center}.mmbb-popularpost .list-group-item{padding:8px 5px 8px 8px}.mmbb-popularpost .media-body p{margin-bottom:0}.mmbb-popularpost .media-left{padding-right:8px}.mmbb-popularpost .media-left img,.mmbb-home-post .media-left img{height:80px;width:80px}.mmbb-home-post .media{margin:-5px;margin-bottom:0}.mmbb-category .panel-body{padding-bottom:0}.mmbb-category .list-inline li{margin-bottom:5px;padding:0}.mmbb-post-detail .panel-body{padding-bottom:0}.mmbb-post-detail .panel-heading{padding-left:8px}.mmbb-post-detail>.panel .list-group .list-group-item{padding:8px}.mmbb-post-detail .panel-footer{padding-right:10px}.mmbb-author .thumbnail{padding-top:8px;margin-bottom:0}.jqh-sharing h5{display:inline-block;margin:0;padding-right:10px;color:#777}.jqh-sharing a .icon{color:#bbb;transition:.5s}.icon{display:inline-block;vertical-align:-15%;position:relative;font:normal normal normal 14px/1 mmbb-font;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-sm{font-size:1.33333333em;line-height:.75em;vertical-align:-30%}.icon-md{font-size:1.66666666em;line-height:1em;vertical-align:-28%}.jqh-link:hover .jqh-googleplus,.jqh-link:hover .jqh-googleplus-square,.jqh-link-colored .jqh-googleplus,.jqh-link-colored .jqh-googleplus-square,.jqh-sharing a:hover .jqh-googleplus,.jqh-sharing a:hover .jqh-googleplus-square,.jqh-sharing-colored a .jqh-googleplus,.jqh-sharing-colored a .jqh-googleplus-square{color:#dc4e41}.jqh-link:hover .jqh-facebook,.jqh-link:hover .jqh-facebook-square,.jqh-link-colored .jqh-facebook,.jqh-link-colored .jqh-facebook-square,.jqh-sharing a:hover .jqh-facebook,.jqh-sharing a:hover .jqh-facebook-square,.jqh-sharing-colored a .jqh-facebook,.jqh-sharing-colored a .jqh-facebook-square{color:#3b5998}.jqh-link:hover .jqh-twitter,.jqh-link:hover .jqh-twitter-square,.jqh-link-colored .jqh-twitter+b,.jqh-link-colored .jqh-twitter,.jqh-link-colored .jqh-twitter-square,.jqh-sharing a:hover .jqh-twitter,.jqh-sharing a:hover .jqh-twitter-square,.jqh-sharing-colored a .jqh-twitter,.jqh-sharing-colored a .jqh-twitter-square{color:#1da1f2}.jqh-sharing-colored a:hover .icon{color:#bbb}.jqh-link .icon,.jqh-link svg{color:#bbb}svg{position:relative;fill:currentColor;vertical-align:-12.44444%}.mmbb-blogroll .panel-body{padding:10px 10px 3px 10px}footer{padding-top:15px;border-top:1px solid #ddd}@media(min-width:768px){.mmbb-disqus{margin-bottom:-18px}.mmbb-popularpost .media{font-size:90%}#mmbb-header,#mmbb-main,#mmbb-sidebar1,#mmbb-sidebar2{padding:3px}#mmbb-header{padding-top:6px}footer{margin-top:10px}footer .flast{float:right}}@media(min-width:767px){#mmbb-main .pager{margin-bottom:8px}}@media(max-width:767px){.mmbb-disqus{margin-bottom:-24px}.breadcrumb,.mmbb-popularpost,.mmbb-home-post{line-height:1.3em}.mmbb-category .btn{padding:1px 5px;font-size:100%}#mmbb-main .pager{margin-bottom:1px}#mmbb-sidebar2 .widget:first-of-type{margin-top:-12px}footer,footer .col-xs-12{text-align:center}}
+#navbar-iframe{display:none}body{padding-top:51px;padding-bottom:10px;background-color:#f8f8f8;font-family:sans-serif}hr{margin-top:0;margin-bottom:0}a,a:hover,a:focus{transition:.5s;text-decoration:none}h1,h2,h3,h4{font-weight:300}#mmbb-header,#mmbb-main,#mmbb-sidebar1,#mmbb-sidebar2{padding:6px}.status-msg-border{display:none}.status-msg-body{position:relative;padding:0;margin:-5px}#mmbb-header{padding-bottom:0}#mmbb-header .breadcrumb{margin-bottom:0;border:1px solid #ddd}#mmbb-main>.list-group{margin-bottom:6px}.mmbb-home-post .list-group-item .media-title>h5{line-height:1.3em;margin:0 0 5px 0}.mmbb-home-post .media{margin:-5px -5px -3px -7px}.mmbb-home-post .media-left{padding:2px 8px 3px 0}.widget .panel{margin-bottom:8px}#mmbb-main .panel-body{padding:8px}.mmbb-pager{margin-top:-8px}#mmbb-main>.list-group+.mmbb-pager{margin-top:20px}.mmbb-disqus{margin-top:13px}.panel-footer{text-align:center}.mmbb-popularpost .list-group-item{padding:8px 5px 8px 8px}.mmbb-popularpost .media-body p{margin-bottom:0}.mmbb-popularpost .media-left{padding:2px 8px 3px 0}.mmbb-popularpost .media-left img,.mmbb-home-post .media-left img{height:80px;width:80px}.mmbb-category .panel-body{padding:11px 10px 0 14px}.mmbb-category .list-inline{padding:0;margin-bottom:6px}.mmbb-category .list-inline li{margin-bottom:5px;padding:0}.mmbb-post-detail .panel-body{padding-bottom:0}.mmbb-post-detail .panel-heading{padding-left:8px}.mmbb-post-detail>.panel .list-group .list-group-item{padding:6px 8px 6px}.mmbb-post-detail .panel-footer{padding-right:10px}.mmbb-author .thumbnail{padding-top:8px;margin-bottom:0}.jqh-sharing h5{display:inline-block;margin:0;padding-right:10px;color:#777}.jqh-sharing a .icon{color:#bbb;transition:.5s}.icon{display:inline-block;vertical-align:-15%;position:relative;font:normal normal normal 14px/1 mmbb-font;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-sm{font-size:1.33333333em;line-height:.75em;vertical-align:-30%}.icon-md{font-size:1.66666666em;line-height:1em;vertical-align:-28%}.jqh-link:hover .jqh-googleplus,.jqh-link:hover .jqh-googleplus-square,.jqh-link-colored .jqh-googleplus,.jqh-link-colored .jqh-googleplus-square,.jqh-sharing a:hover .jqh-googleplus,.jqh-sharing a:hover .jqh-googleplus-square,.jqh-sharing-colored a .jqh-googleplus,.jqh-sharing-colored a .jqh-googleplus-square{color:#dc4e41}.jqh-link:hover .jqh-facebook,.jqh-link:hover .jqh-facebook-square,.jqh-link-colored .jqh-facebook,.jqh-link-colored .jqh-facebook-square,.jqh-sharing a:hover .jqh-facebook,.jqh-sharing a:hover .jqh-facebook-square,.jqh-sharing-colored a .jqh-facebook,.jqh-sharing-colored a .jqh-facebook-square{color:#3b5998}.jqh-link:hover .jqh-twitter,.jqh-link:hover .jqh-twitter-square,.jqh-link-colored .jqh-twitter+b,.jqh-link-colored .jqh-twitter,.jqh-link-colored .jqh-twitter-square,.jqh-sharing a:hover .jqh-twitter,.jqh-sharing a:hover .jqh-twitter-square,.jqh-sharing-colored a .jqh-twitter,.jqh-sharing-colored a .jqh-twitter-square{color:#1da1f2}.jqh-sharing-colored a:hover .icon{color:#bbb}.jqh-link .icon,.jqh-link svg{color:#bbb}svg{position:relative;fill:currentColor;vertical-align:-12.44444%}.mmbb-blogroll .panel-body{padding:10px 10px 3px 10px}footer{padding-top:15px;border-top:1px solid #ddd}.mmbb-post-detail img.pull-left{margin-right:5px}.mmbb-post-detail img.pull-right{margin-left:5px}@media(min-width:768px){.mmbb-disqus{margin-bottom:-7px}.mmbb-popularpost .media{font-size:90%}#mmbb-header,#mmbb-main,#mmbb-sidebar1,#mmbb-sidebar2{padding:3px}#mmbb-header{padding-top:6px}footer{margin-top:10px}footer .flast{float:right}}@media(max-width:991px){.mmbb-popularpost .list-group-item:hover,.mmbb-home-post .list-group-item:hover{background-color:#f1f1f1}}@media(min-width:767px){#mmbb-main .pager{margin-bottom:8px}}@media(max-width:767px){.mmbb-disqus{margin-bottom:-12px}.breadcrumb,.mmbb-popularpost,.mmbb-home-post{line-height:1.3em}.breadcrumb{padding-left:8px}.mmbb-category .btn{padding:3px 7px 2px;font-size:100%}#mmbb-main .pager{margin-bottom:1px}#mmbb-sidebar2 .widget:first-of-type{margin-top:-12px}footer,footer .col-xs-12{text-align:center}}
 </style>
     <!-- ]]></b:skin> -->
   </head>
@@ -235,13 +237,13 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
                 </b:loop>
                <b:else/>
                 <b:if cond='data:blog.pageType == &quot;archive&quot;'>
-                 <li class='active'>Archives for <data:blog.pageName/></li>
+                 <li class='active'>Archives for <b><data:blog.pageName/></b></li>
                 <b:else/>
                  <b:if cond='data:blog.pageType == &quot;index&quot;'>
                   <b:if cond='data:blog.pageName == &quot;&quot;'>
                    <li class='active'>All posts</li>
                   <b:else/>
-                   <li class='active'>Posts filed under <data:blog.pageName/></li>
+                   <li class='active'>Posts filed under <b><data:blog.pageName/></b></li>
                   </b:if>
                  </b:if>
                 </b:if>
@@ -804,7 +806,7 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
              <div class='mmbb-disqus'>
               <div class="panel panel-default">
                <div class="panel-heading">
-                <h4 class="panel-title">Kolom komentar Disqus</h4>
+                <h4 class="panel-title">Disqus your comments</h4>
                </div>
                <div class="panel-body">
                   <script type='text/javascript'>
@@ -842,7 +844,7 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
                   </script>
                 <div id='comments'/>
                </div> <!-- /.panel-body disquss comment -->
-
+               <div class="panel-footer">Powered by Disqus</div>
                </div> <!-- /.panel disquss -->
               </div><!-- mmbb-disqus comment -->
             </b:if>
@@ -1271,7 +1273,7 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
 <script src='https://cdn.rawgit.com/seujungkuku/own/04999ef0/collapse.min.js' type='text/javascript'/>
 <script src='https://cdn.rawgit.com/seujungkuku/own/ebc96cf0/holder.min.js' type='text/javascript'/>
 <script type='text/javascript'>var icon_blogger = true;</script>
-<script src='https://cdn.rawgit.com/seujungkuku/own/a5f6c3cd/mmbb.enc.min.js' type='text/javascript'/>
+<script src='https://cdn.rawgit.com/seujungkuku/own/b24660dc/mmbb.enc.min.js' type='text/javascript'/>
 <!--   </body> -->
 &lt;!---</body>---&gt;&lt;/body&gt;
 </html>

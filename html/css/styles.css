@@ -16,10 +16,12 @@ h1,h2,h3,h4 {font-weight:300}
 #mmbb-header {padding-bottom:0}
 #mmbb-header .breadcrumb {margin-bottom:0;border:1px solid #ddd;}
 
-#mmbb-main > .list-group {margin-bottom:6px;} 
+#mmbb-main > .list-group {margin-bottom:6px} 
 
 .mmbb-home-post .list-group-item .media-title > h5{line-height:1.3em;margin:0 0 5px 0;}
-#mmbb-sidebar1 .widget .panel, #mmbb-sidebar2 .widget .panel {margin-bottom:8px}
+.mmbb-home-post .media{margin:-5px -5px -3px -7px;}
+.mmbb-home-post .media-left {padding:2px 8px 3px 0;}
+.widget .panel {margin-bottom:8px}
 
 #mmbb-main .panel-body {padding:8px}
 .mmbb-pager{margin-top:-8px;} /*margin-top -5px untuk home jarak ke widget */
@@ -28,16 +30,16 @@ h1,h2,h3,h4 {font-weight:300}
 .panel-footer {text-align: center}
 .mmbb-popularpost .list-group-item {padding:8px 5px 8px 8px}
 .mmbb-popularpost .media-body p{margin-bottom:0}
-.mmbb-popularpost .media-left {padding-right:8px}
+.mmbb-popularpost .media-left {padding:2px 8px 3px 0px}
 .mmbb-popularpost .media-left img,.mmbb-home-post .media-left img{height:80px;width:80px;}
 
-.mmbb-home-post .media{margin:-5px;margin-bottom: 0}
-.mmbb-category .panel-body {padding-bottom:0;}
+.mmbb-category .panel-body {padding:11px 10px 0 14px;}
+.mmbb-category .list-inline {padding: 0;margin-bottom:6px;}
 .mmbb-category .list-inline li {margin-bottom:5px;padding:0;}
 
 .mmbb-post-detail .panel-body {padding-bottom: 0}
 .mmbb-post-detail .panel-heading {padding-left:8px }
-.mmbb-post-detail > .panel .list-group .list-group-item {padding:8px;}
+.mmbb-post-detail > .panel .list-group .list-group-item {padding:6px 8px 6px;}
 .mmbb-post-detail .panel-footer{/*border-radius: 0;border-bottom: 1px solid #ddd;*/padding-right:10px;}
 /* .mmbb-postrelated > h5 {margin-left: 8px;margin-bottom:0;}
 .mmbb-postrelated .list-group{margin-bottom: 0}
@@ -94,22 +96,27 @@ svg{position:relative;fill:currentColor;vertical-align: -12.44444%}
 .mmbb-blogroll .panel-body {padding:10px 10px 3px 10px}
 
 footer {padding-top:15px;border-top:1px solid #ddd}
+.mmbb-post-detail img.pull-left {margin-right:5px;}
+.mmbb-post-detail img.pull-right {margin-left:5px;}
 @media (min-width:768px){
-  .mmbb-disqus {margin-bottom: -18px}
+  .mmbb-disqus {margin-bottom: -7px}
   .mmbb-popularpost .media {font-size:90%}
   #mmbb-header, #mmbb-main, #mmbb-sidebar1 , #mmbb-sidebar2 {padding:3px}
   #mmbb-header {padding-top: 6px}
   footer {margin-top:10px;}
   footer .flast {float:right;}
 }
-/*@media (max-width:991px){}*/
+@media (max-width:991px){
+  .mmbb-popularpost .list-group-item:hover, .mmbb-home-post .list-group-item:hover{background-color:#f1f1f1}
+}
 @media (min-width:767px){
 #mmbb-main .pager{margin-bottom:8px} /*margin-top -5px untuk home jarak ke widget */	
 }
 @media (max-width:767px){
-.mmbb-disqus {margin-bottom: -24px}
+.mmbb-disqus {margin-bottom: -12px}
 .breadcrumb, .mmbb-popularpost, .mmbb-home-post {line-height:1.3em;}
-.mmbb-category .btn{padding:1px 5px;font-size:100%;}  
+.breadcrumb {padding-left: 8px}
+.mmbb-category .btn{padding:3px 7px 2px;font-size:100%;}  
 #mmbb-main .pager{margin-bottom:1px} /*margin-top -5px untuk home jarak ke widget */	
 #mmbb-sidebar2 .widget:first-of-type {margin-top: -12px}	
  footer, footer .col-xs-12 {text-align:center}

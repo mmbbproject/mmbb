@@ -7,6 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Minimalist Modern Bootstrap Blogger">
     <meta name="author" content="ox69xo">
+    <link href="img/mmbb-icon.ico" rel="icon" type="image/x-icon"/>
 
     <title>Detail - Minimalist Modern Bootstrap Blogger</title>
     <!--<link rel="stylesheet" id="options-google-fonts" href="//fonts.googleapis.com/css?family=Roboto:300,400&subset=latin" type="text/css" media="all"/>-->
@@ -17,8 +18,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <style> 
     /* style hanya untuk demo image */
-    .mmbb-post-detail img.pull-left {margin-right:5px;}
-    .mmbb-post-detail img.pull-right {margin-left:5px;}
+ 
     </style>
   </head>
 
@@ -34,14 +34,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="javascript:;">MMBB Template</a>
+            <a class="navbar-brand" href="file:///D:/Docs/MMBB/template/html/detail.html">MMBB Template</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="nav navbar-nav" id="mmbb-headermenu">
                 <li><a href="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/detail.html">Home</a></li>
-                <li><a href="file:///D:/Docs/MMBB/template/html/home.html">About</a></li>
-                <li><a href="javascript:;">Contact</a></li>
+                <li><a href="javascript:;">About</a></li>
+                <li><a href="file:///D:/Docs/MMBB/template/html/detail.html">Contact</a></li>
             </ul>
             <form action='/search' class='navbar-form navbar-right' method='get' role='search'>
               <div class='input-group'>
@@ -56,14 +56,6 @@
         </div>
     </div>
 </nav> 
-
-<!-- <div class="jumbotron">
-  <div class="container text-center">
-    <h1>MMBB Template Blogger</h1>
-    <p>Free! Dibangun menggunakan Bootstrap, front-end framewok paling hits sampai saat ini. Dengan dasar minimalist dan responsive di banyak device, menjadikan template ini layak untuk di coba. </p>
-    <p><a class="btn btn-info btn-lg" href="#" role="button">Download &nbsp;<span class='glyphicon glyphicon-download'></span></a></p>
-  </div>
-</div> -->
 
 <div class="container">
  <div class="row">
@@ -155,8 +147,9 @@
   </div> <!-- /.mmbb-main /.post-detail -->
 
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="mmbb-sidebar1">
-   <div class="widget mmbb-category"><!-- online -->
-    <div class="panel panel-default">
+   <div class="widget"><!-- online -->
+    <div class="mmbb-category">
+     <div class="panel panel-default">
       <div class="panel-heading"><h4 class="panel-title">Category</h4></div>
       <div class="panel-body">
         <ul class="list-inline text-capitalize">
@@ -172,11 +165,13 @@
       <div class="panel-footer">
         <a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a>
       </div>
+     </div>
     </div>
    </div> <!-- /.category -->
 
-   <div class="widget mmbb-popularpost"><!-- online -->
-    <div class="panel panel-default">
+   <div class="widget"><!-- online -->
+    <div class="mmbb-popularpost">
+     <div class="panel panel-default">
       <div class="panel-heading"><h5 class="panel-title">Popular Post</h5></div>
         <ul class="list-group">
           <li class="list-group-item">
@@ -221,7 +216,7 @@
               <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
-            <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
+            <h5 class="media-heading"><a href='file:///D:/Docs/MMBB/template/html/detail.html'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
             </div>
@@ -231,14 +226,16 @@
       <div class="panel-footer">
         <a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a>
       </div>
+     </div>
     </div>
    </div>
 
   </div> <!-- /.mmbb-sidebar 1st -->
 
   <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" id="mmbb-sidebar2">
-   <div class="widget mmbb-blogroll"><!-- online -->
-    <div class="panel panel-default">
+   <div class="widget"><!-- online -->
+    <div class="mmbb-blogroll">
+     <div class="panel panel-default">
       <div class="panel-heading"><h4 class="panel-title">Blogroll</h4></div>
       <div class="panel-body">
         <ul class="list-unstyled">
@@ -249,11 +246,13 @@
       <div class="panel-footer">
         <a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a>
       </div>
+     </div>
     </div>
    </div>
 
-   <div class="widget mmbb-author"><!-- online -->
-    <div class="panel panel-default">
+   <div class="widget"><!-- online -->
+    <div class="mmbb-author">
+     <div class="panel panel-default">
       <div class="panel-heading"><h4 class="panel-title">About me</h4></div>
       <div class="panel-body text-center">
        <div class="thumbnail">
@@ -267,6 +266,7 @@
       <div class="panel-footer">
         <a href="javascript:;" class="jqh-link" target="_blank"><span class="icon jqh-twitter icon-md"></span></a>
       </div>
+     </div>
     </div>
    </div> 
   </div> <!-- /.end mmbb-sidebar 2nd -->
@@ -285,5 +285,7 @@
 <script type="text/javascript" src="js/collapse.js"></script>
 <script type='text/javascript'>var icon_blogger = true;</script>
 <script type="text/javascript" src="../../mmbb.js"></script>
+  <!-- atau -->
+<!-- <script type="text/javascript" src="js/mmbb.enc.min.js"></script>   -->
   </body>
 </html>

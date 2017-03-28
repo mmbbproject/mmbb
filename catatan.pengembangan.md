@@ -79,3 +79,6 @@ itu _media-body_ > p.
 - Menambahkan style active page untuk **Header Menu**, kode berada di `mmbb.js`.
 - Menambahkan style active page untuk **Popular Post**, kode berada di `mmbb.js`.
 - Fix style *breadcrumb* untuk tampilan di **mobile**, jarak elemen `li` terakhir terlalu jauh dari kiri, karena menggunakan `padding-left`. Mengurangi `line-height` menjadi `1.3em` khusus tampilan di **mobile**.
+- Fix style *home post*.
+- Fix style *breadcrumb*.
+- Fix *Header menu* link navbar-brand, disable jika halaman home aktif.
