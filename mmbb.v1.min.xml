@@ -2,25 +2,30 @@
 <!DOCTYPE html>
 <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>    
     <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
-    
     <b:include data='blog' name='all-head-content'/>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
 
-    <link href="https://2.bp.blogspot.com/-4eIVpEKDR-8/WNqest-gViI/AAAAAAAAA00/BDdnhAg-K6E80E_SxSsJXE9g971KYWPmwCLcB/s1600/mmbb-icon.ico" rel="icon" type="image/x-icon"/>
+<!--
+  meta tag cari sendiri referensinya
+  pelajari juga penulisan microdata agar blog/web lebih mudah di olah oleh search engine
+-->
 
-  	<b:if cond='data:blog.pageType == &quot;item&quot;'>
-  	 <title><data:blog.pageName/> | <data:blog.title/></title>
-  	<b:else/><title><data:blog.pageTitle/></title>
-  	</b:if>
-  	<b:if cond='data:blog.pageType == &quot;archive&quot;'>
-  	 <title><data:blog.pageName/> | <data:blog.title/></title>
-  	</b:if>
-  	<b:if cond='data:blog.pageType == &quot;label&quot;'>
-  	 <title><data:blog.pageName/> | <data:blog.title/></title>
-  	</b:if>
+<!-- IF CONDITION super simple, tips dan trik kunjungi jqueryholic.blogspot.co.id -->  
+ <title itemprop='name'>
+  <b:if cond='data:blog.pageType == &quot;item&quot; OR data:blog.pageType == &quot;archive&quot; OR data:blog.pageType == &quot;label&quot;'>
+    <data:blog.pageName/> | <data:blog.title/>
+  <b:elseif cond='data:blog.pageType == &quot;error_page&quot;'/>
+    Page Not Found | <data:blog.title/>
+  <b:else/>
+    <data:blog.pageTitle/>
+  </b:if>
+ </title>
 
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&amp;subset=latin" rel="stylesheet"/>  -->
   <link href='https://cdn.rawgit.com/seujungkuku/own/4cf59d15/bootstrap.custom.mmbb.min.css' rel='stylesheet'/> 
-  <link href='https://cdn.rawgit.com/seujungkuku/own/f9710b3c/mmbb.icon.min.css' rel='stylesheet' type='text/css'/>
+  <link href="https://file.myfontastic.com/TERSVkx8Xd5Gw4iiHmTfWY/icons.css" rel="stylesheet"/>
   
  <!--    <b:skin><![CDATA[ -->
 &lt;style type=&quot;text/css&quot;&gt;
@@ -39,20 +44,24 @@ Twitter     : ox69xo
 Download    : https://github.com/mmbbproject/mmbb/blob/master/mmbb.v1.min.zip
 Web Project : https://mmbbproject.github.io
 Development : https://github.com/mmbbproject/mmbb
+License     : This free Blogger template is licensed under the Creative Commons Attribution 4.0 License, which permits both personal and commercial use.
 -----------------------------------------------
-License:
-Baca: http://github.com/mmbbproject/mmbb/README.md
-Bebas didistribusikan dan dimodifikasi, dengan syarat yaitu tidak menghilangkan deskripsi author seperti tertera di atas.
+Pemasangan  : https://github.com/mmbbproject/mmbb/blob/master/README.md
+
+Bebas didistribusikan dan dimodifikasi, disarankan tidak menghilangkan deskripsi author seperti tertera di atas.
 Juga wajib menambahkan informasi author (ox69xo) dihalaman bawah blog lengkap dengan link aktif ke (http://jqueryholic.blogspot.co.id/).
 
 Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fontastic.me.
 ----------------------------------------------- */
-#navbar-iframe{display:none}body{padding-top:51px;padding-bottom:10px;background-color:#f8f8f8;font-family:sans-serif}hr{margin-top:0;margin-bottom:0}a,a:hover,a:focus{transition:.5s;text-decoration:none}h1,h2,h3,h4{font-weight:300}#mmbb-header,#mmbb-main,#mmbb-sidebar1,#mmbb-sidebar2{padding:6px}.status-msg-border{display:none}.status-msg-body{position:relative;padding:0;margin:-5px}#mmbb-header{padding-bottom:0}#mmbb-header .breadcrumb{margin-bottom:0;border:1px solid #ddd}#mmbb-main>.list-group{margin-bottom:6px}.mmbb-home-post .list-group-item .media-title>h5{line-height:1.3em;margin:0 0 5px 0}.mmbb-home-post .media{margin:-5px -5px -3px -7px}.mmbb-home-post .media-left{padding:2px 8px 3px 0}.widget .panel{margin-bottom:8px}#mmbb-main .panel-body{padding:8px}.mmbb-pager{margin-top:-8px}#mmbb-main>.list-group+.mmbb-pager{margin-top:20px}.mmbb-disqus{margin-top:13px}.panel-footer{text-align:center}.mmbb-popularpost .list-group-item{padding:8px 5px 8px 8px}.mmbb-popularpost .media-body p{margin-bottom:0}.mmbb-popularpost .media-left{padding:2px 8px 3px 0}.mmbb-popularpost .media-left img,.mmbb-home-post .media-left img{height:80px;width:80px}.mmbb-category .panel-body{padding:11px 10px 0 14px}.mmbb-category .list-inline{padding:0;margin-bottom:6px}.mmbb-category .list-inline li{margin-bottom:5px;padding:0}.mmbb-post-detail .panel-body{padding-bottom:0}.mmbb-post-detail .panel-heading{padding-left:8px}.mmbb-post-detail>.panel .list-group .list-group-item{padding:6px 8px 6px}.mmbb-post-detail .panel-footer{padding-right:10px}.mmbb-author .thumbnail{padding-top:8px;margin-bottom:0}.jqh-sharing h5{display:inline-block;margin:0;padding-right:10px;color:#777}.jqh-sharing a .icon{color:#bbb;transition:.5s}.icon{display:inline-block;vertical-align:-15%;position:relative;font:normal normal normal 14px/1 mmbb-font;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-sm{font-size:1.33333333em;line-height:.75em;vertical-align:-30%}.icon-md{font-size:1.66666666em;line-height:1em;vertical-align:-28%}.jqh-link:hover .jqh-googleplus,.jqh-link:hover .jqh-googleplus-square,.jqh-link-colored .jqh-googleplus,.jqh-link-colored .jqh-googleplus-square,.jqh-sharing a:hover .jqh-googleplus,.jqh-sharing a:hover .jqh-googleplus-square,.jqh-sharing-colored a .jqh-googleplus,.jqh-sharing-colored a .jqh-googleplus-square{color:#dc4e41}.jqh-link:hover .jqh-facebook,.jqh-link:hover .jqh-facebook-square,.jqh-link-colored .jqh-facebook,.jqh-link-colored .jqh-facebook-square,.jqh-sharing a:hover .jqh-facebook,.jqh-sharing a:hover .jqh-facebook-square,.jqh-sharing-colored a .jqh-facebook,.jqh-sharing-colored a .jqh-facebook-square{color:#3b5998}.jqh-link:hover .jqh-twitter,.jqh-link:hover .jqh-twitter-square,.jqh-link-colored .jqh-twitter+b,.jqh-link-colored .jqh-twitter,.jqh-link-colored .jqh-twitter-square,.jqh-sharing a:hover .jqh-twitter,.jqh-sharing a:hover .jqh-twitter-square,.jqh-sharing-colored a .jqh-twitter,.jqh-sharing-colored a .jqh-twitter-square{color:#1da1f2}.jqh-sharing-colored a:hover .icon{color:#bbb}.jqh-link .icon,.jqh-link svg{color:#bbb}svg{position:relative;fill:currentColor;vertical-align:-12.44444%}.mmbb-blogroll .panel-body{padding:10px 10px 3px 10px}footer{padding-top:15px;border-top:1px solid #ddd}.mmbb-post-detail img.pull-left{margin-right:5px}.mmbb-post-detail img.pull-right{margin-left:5px}@media(min-width:768px){.mmbb-disqus{margin-bottom:-7px}.mmbb-popularpost .media{font-size:90%}#mmbb-header,#mmbb-main,#mmbb-sidebar1,#mmbb-sidebar2{padding:3px}#mmbb-header{padding-top:6px}footer{margin-top:10px}footer .flast{float:right}}@media(max-width:991px){.mmbb-popularpost .list-group-item:hover,.mmbb-home-post .list-group-item:hover{background-color:#f1f1f1}}@media(min-width:767px){#mmbb-main .pager{margin-bottom:8px}}@media(max-width:767px){.mmbb-disqus{margin-bottom:-12px}.breadcrumb,.mmbb-popularpost,.mmbb-home-post{line-height:1.3em}.breadcrumb{padding-left:8px}.mmbb-category .btn{padding:3px 7px 2px;font-size:100%}#mmbb-main .pager{margin-bottom:1px}#mmbb-sidebar2 .widget:first-of-type{margin-top:-12px}footer,footer .col-xs-12{text-align:center}}
+#navbar-iframe{display:none}body{padding-top:51px;padding-bottom:10px;background-color:#f8f8f8;font-family:sans-serif}hr{margin-top:0;margin-bottom:0}a,a:hover,a:focus{transition:.5s;text-decoration:none}h1,h2,h3,h4{font-weight:400}#mmbb-header,#mmbb-main,#mmbb-sidebar1,#mmbb-sidebar2{padding:6px}.status-msg-border{display:none}.status-msg-body{position:relative;padding:8px;padding:0;margin:-5px -7px}#mmbb-header{padding-bottom:0}#mmbb-header .alert{margin-bottom:7px;padding:10px;line-height:1.2em}#mmbb-header .alert h4{margin:0 3px 5px}#mmbb-header .alert a{text-decoration:underline}#mmbb-header .breadcrumb{margin-bottom:0;border:1px solid #ddd}#mmbb-main>.list-group{margin-bottom:6px}.mmbb-home-post .list-group-item .media-title>h5{line-height:1.3em;margin:0 0 5px 0}.mmbb-home-post .media{margin:-5px -5px -3px -7px}.mmbb-home-post .media-left{padding:2px 8px 3px 0}.widget .panel{margin-bottom:8px}#mmbb-main .panel-body{padding:8px}.mmbb-pager{margin-top:-8px}#mmbb-main>.list-group+.mmbb-pager{margin-top:20px}.mmbb-disqus{margin-top:13px}.panel-footer{text-align:center}.mmbb-popularpost .list-group-item{padding:8px 5px 8px 8px}.mmbb-popularpost .media-body p{margin-bottom:0}.mmbb-popularpost .media-left{padding:2px 8px 3px 0}.mmbb-popularpost .media-left img,.mmbb-home-post .media-left img{height:80px;width:80px}.mmbb-category .panel-body{padding:11px 10px 0 14px}.mmbb-category .list-inline{padding:0;margin-bottom:6px}.mmbb-category .list-inline li{margin-bottom:5px;padding:0}.mmbb-post-detail .panel-body{padding-bottom:0}.mmbb-post-detail .panel-heading{padding-left:8px}.mmbb-post-detail>.panel .list-group .list-group-item{padding:6px 8px 6px}.mmbb-post-detail .panel-footer{padding-right:10px}.mmbb-author .thumbnail{padding-top:8px;margin-bottom:0}.scroll-y{overflow-y:scroll;height:250px}.jqh-sharing h5{display:inline-block;margin:0;padding-right:10px;color:#777}.jqh-sharing a .icon{color:#bbb;transition:.5s}.icon{display:inline-block;vertical-align:-15%;position:relative;font:normal normal normal 14px/1 mmbb-font;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-sm{font-size:1.33333333em;line-height:.75em;vertical-align:-30%}.icon-md{font-size:1.66666666em;line-height:1em;vertical-align:-28%}.jqh-link:hover .jqh-googleplus,.jqh-link:hover .jqh-googleplus-square,.jqh-sharing a:hover .jqh-googleplus,.jqh-sharing a:hover .jqh-googleplus-square{color:#dc4e41}.jqh-link:hover .jqh-facebook,.jqh-link:hover .jqh-facebook-square,.jqh-sharing a:hover .jqh-facebook,.jqh-sharing a:hover .jqh-facebook-square{color:#3b5998}.jqh-link:hover .jqh-twitter,.jqh-link:hover .jqh-twitter-square,.jqh-sharing a:hover .jqh-twitter,.jqh-sharing a:hover .jqh-twitter-square{color:#1da1f2}.jqh-sharing-colored a:hover .icon{color:#bbb}.jqh-link .icon,.jqh-link svg{color:#bbb}svg{position:relative;fill:currentColor;vertical-align:-12.44444%}.mmbb-blogroll .panel-body,.mmbb-archive .panel-body{padding:10px 10px 3px 10px}#BlogArchive1_ArchiveList ul.posts>li:hover,.mmbb-blogroll ul li:hover .text-muted{color:#000}.mmbb-archive #ArchiveList ul{line-height:1.4em;list-style:none;padding:0;margin-right:0}#BlogArchive1_ArchiveList>ul:first-of-type{margin-left:-3px}#BlogArchive1_ArchiveList>ul ul li{padding-left:17px}footer{padding-top:15px;border-top:1px solid #ddd}.mmbb-post-detail img.pull-left{margin-right:5px}.mmbb-post-detail img.pull-right{margin-left:5px}@media(min-width:768px){.mmbb-disqus{margin-bottom:-7px}.mmbb-popularpost .media{font-size:90%}#mmbb-header,#mmbb-main,#mmbb-sidebar1,#mmbb-sidebar2{padding:3px}#mmbb-header{padding-top:6px}footer{margin-top:10px}footer .flast{float:right}}@media(max-width:991px){.mmbb-popularpost .list-group-item:hover,.mmbb-home-post .list-group-item:hover{background-color:#f1f1f1}}@media(min-width:767px){#mmbb-main .pager{margin-bottom:8px}}@media(max-width:767px){.mmbb-disqus{margin-bottom:-12px}#mmbb-main>.list-group .list-group-item.bg-danger{padding:25px 15px !important;margin-bottom:-8px}.breadcrumb,.mmbb-popularpost,.mmbb-home-post{line-height:1.3em}.breadcrumb{padding-left:8px}.mmbb-category .btn{padding:3px 7px 2px;font-size:100%}#mmbb-main .pager{margin-bottom:1px}#mmbb-sidebar2 .widget:first-of-type{margin-top:-12px}footer,footer .col-xs-12{text-align:center}}
 </style>
     <!-- ]]></b:skin> -->
   </head>
-<body>
-
+<body data-template="mmbbproject.github.io">
+<!-- 
+  data-template jangan dihapus/diganti, berdampak pada mmbb.js yang tidak akan berjalan
+  dan tampilan blog/web menjadi rusak
+-->
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -62,10 +71,11 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" expr:href="data:blog.homepageUrl">MMBB Template</a>
+      <a class="navbar-brand" expr:href="data:blog.homepageUrl"><span class="sr-only">Brand link</span>MMBB Template</a>
     </div>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="nav navbar-nav" id="mmbb-headermenu">
+        <span class="sr-only">Header navigation</span>
         <li><a expr:href="data:blog.homepageUrl">Home</a></li>
         <li><a expr:href="data:blog.homepageUrl + &quot;p/about.html&quot;">About</a></li>
         <li><a expr:href="data:blog.homepageUrl + &quot;p/contact.html&quot;">Contact</a></li>
@@ -91,10 +101,10 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
         <b:includable id='main' var='top'>
           <b:if cond='data:mobile == &quot;false&quot;'>
             <b:include data='posts' name='breadcrumb'/>
-            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-md-push-4 col-md-push-4" id="mmbb-main">
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" id="mmbb-main">
 
             <b:include data='top' name='status-message'/>
-            <b:if cond='data:blog.pageType == &quot;index&quot;'>
+            <b:if cond='data:blog.pageType == &quot;index&quot; OR data:blog.pageType == &quot;archive&quot;'>
               <div class="mmbb-home-post">
                 <ul class="list-group">
                   <b:loop values='data:posts' var='post'>
@@ -213,21 +223,22 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
           </span>
         </b:includable>
         <b:includable id='breadcrumb' var='posts'>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mmbb-header">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mmbb-header">         
             <ol class='breadcrumb'>
+              <span class="sr-only">Breadcrumb</span>
               <b:if cond='data:blog.homepageUrl == data:blog.url'>
                 <li class="active">Home</li>
               <b:else/>
-                <li><a expr:href='data:blog.homepageUrl' rel='Home'>Home</a></li>
+                <li><a expr:href='data:blog.homepageUrl' rel='Home'>Home</a><span class="sr-only">&amp;rang;</span></li>
                <b:if cond='data:blog.pageType == &quot;item&quot;'>
                 <b:loop values='data:posts' var='post'>
                 <b:if cond='data:post.labels'>
+<!-- Code Pro! batasi looping dengan membuat index data, tips dan trik kunjungi jqueryholic.blogspot.co.id -->
                  <b:loop values='data:post.labels' var='label' index='jqh'>
                   <b:if cond='data:jqh == 0'>
-                    <li><a class='text-capitalize' expr:href='data:label.url' rel='tag'><data:label.name/></a></li>
-                  </b:if>                    
-                  <b:if cond='data:jqh == 1'>
-                    <li><a class='text-capitalize' expr:href='data:label.url' rel='tag'><data:label.name/></a></li>
+                    <li><a class='text-capitalize' expr:href='data:label.url' rel='tag'><data:label.name/></a><span class="sr-only">&amp;raquo;</span></li>
+                  <b:elseif cond='data:jqh == 1'/>
+                    <li><a class='text-capitalize' expr:href='data:label.url' rel='tag'><data:label.name/></a><span class="sr-only">&amp;raquo;</span></li>
                   </b:if>
                  </b:loop>
                 <b:else/>
@@ -687,7 +698,7 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
          </nav>
         </b:includable>
         <b:includable id='post' var='post'>
-          <b:if cond='data:blog.pageType == &quot;index&quot;'>
+          <b:if cond='data:blog.pageType == &quot;index&quot; OR data:blog.pageType == &quot;archive&quot;'>
             <li class="list-group-item">
               <div class="media">
                 <div class="media-title">
@@ -707,13 +718,13 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
                   </b:if>                      
                  </h5>
                 </div>
-                  <b:if cond='data:post.thumbnailUrl'>
-                    <div class="media-left">
-                        <img alt='80x80' class='media-object img-thumbnail' expr:src='data:post.thumbnailUrl' expr:title='data:blog.title + &quot; - &quot; + data:blog.post.title + &quot; - thumbnail img&quot;'/>
-                    </div>
-                  <b:else/>
-                    <div class="media-left"/>
-                  </b:if>
+                <b:if cond='data:post.thumbnailUrl'>
+                  <div class="media-left">
+                      <img alt='80x80' class='media-object img-thumbnail' expr:src='data:post.thumbnailUrl' expr:title='data:blog.title + &quot; - &quot; + data:blog.post.title + &quot; - thumbnail img&quot;'/>
+                  </div>
+                <b:else/>
+                  <div class="media-left"/>
+                </b:if>
                 <div class="media-body">
                  <span class="text-muted">
                   <b:if cond='data:top.showTimestamp'>
@@ -721,7 +732,7 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
                       <data:post.timestamp/> &amp;middot;           
                   </b:if>
                   <b:if cond='data:top.showAuthor'>
-                    <span class="icon jqh-user"></span> <data:post.author/> &amp;middot;
+                    <span class="icon jqh-user"></span> <a title="author profile url" target="_blank" rel="author profile url" expr:href="data:post.authorProfileUrl"><data:post.author/></a> &amp;middot;
                   </b:if>
                  </span>
                  <b:if cond='data:post.snippet'>
@@ -738,12 +749,10 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
                <div class="panel-heading"><h4 class="panel-title">    
                 <b:if cond='data:post.link'>
                  <a expr:href='data:post.link'><data:post.title/></a>
-                <b:else/>
-                 <b:if cond='data:post.url AND data:blog.url != data:post.url'>
+                <b:elseif cond='data:post.url AND data:blog.url != data:post.url'/>
                    <a expr:href='data:post.url'><data:post.title/></a>
-                  <b:else/>
+                <b:else/>
                   <data:post.title/>
-                 </b:if>
                 </b:if>
                </h4></div>
               </b:if>
@@ -754,15 +763,13 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
                   <li class="list-group-item">
                    <ul class="list-inline">
                     <b:if cond='data:top.showAuthor'>
-                     <li><span class="icon jqh-user"></span> <data:post.author/></li>
-                    </b:if>
-                    <b:if cond='data:top.showTimestamp'>
-                     <li><span class="icon jqh-calendar"></span> <data:post.dateHeader/></li>
+                     <li><span class="icon jqh-user"></span> <a title="author profile url" target="_blank" rel="author profile url" expr:href="data:post.authorProfileUrl"><data:post.author/></a></li>
+                    <b:elseif cond='data:top.showTimestamp'/>
+                     <li><span class="icon jqh-calendar"></span> <data:post.timestamp/></li>
                     </b:if>
                    </ul>
                   </li>
-                 </b:if>
-                 <b:if cond='data:post.labels'>
+                 <b:elseif cond='data:post.labels'/>
                   <li class="list-group-item">
                    <span class="icon jqh-tags"></span> 
                     <b:loop values='data:post.labels' var='label'>
@@ -877,10 +884,10 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
           </div>
         </b:includable>
         <b:includable id='status-message'>
-          <b:if cond='data:navMessage'>            
+          <b:if cond='data:navMessage'>
            <ul class="list-group"> <!-- Status msg -->
-             <li class="list-group-item">
-              <div class='status-msg-body'>
+             <li expr:class="data:blog.pageType == &quot;error_page&quot; ? &quot;list-group-item bg-danger&quot; : &quot;list-group-item&quot;">
+              <div class='status-msg-body text-center'>
                 <data:navMessage/>
               </div>      
             </li>
@@ -1121,34 +1128,122 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
         </b:includable>
       </b:widget>
     </b:section>
-   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-md-pull-5 col-lg-pull-5" id="mmbb-sidebar1">
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="mmbb-sidebar1">
     <b:section class='mmbb-sidebar' id='sidebar' preferred='yes'>
      <b:widget id='Label1' locked='false' mobile='yes' title='Category' type='Label' version='1' visible='true'>
+      <b:widget-settings>
+        <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
+      </b:widget-settings>
       <b:includable id='main'>
        <div class="mmbb-category">
         <div class="panel panel-default">
-          <div class="panel-heading"><h4 class="panel-title"><data:title/></h4></div>
+          <div class="panel-heading"><h4 class="panel-title"><data:title/> <small>Active total number post</small></h4></div>
           <div class="panel-body">
+            <span class="sr-only">Labels/category list total post</span>
             <ul class="list-inline text-capitalize">
               <b:loop values='data:labels' var='label'>
                 <li class="text-capitalize">
-                  <b:if cond='data:blog.url == data:label.url'>
-                    <a class='btn btn-default btn-xs' expr:dir='data:blog.languageDirection' href='javascript:;' title='Category terpilih'><data:label.name/></a>
-                  <b:else/>
-                    <a class='btn btn-default btn-xs' expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-                  </b:if>
-                  <b:if cond='data:showFreqNumbers'>
-                    <span dir='ltr'><span class='badge'> <data:label.count/> </span></span>
-                  </b:if>
-                 </li>
+                  <div class="btn-group" role="group">
+                  <a class='btn btn-default btn-xs' rel='tag' expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+                    <b:if cond='data:showFreqNumbers'>
+                      <a class="btn btn-default btn-xs"><span dir='ltr'><data:label.count/></span></a>
+                    </b:if>
+                  </div>                  
+                </li>
               </b:loop>
             </ul>
           </div>
-
         </div>
        </div> <!-- /.category -->
       </b:includable>
      </b:widget>
+
+     <b:widget id='BlogArchive1' locked='false' title='Arsip Blog' type='BlogArchive'>
+      <b:widget-settings>
+        <b:widget-setting name='showStyle'>HIERARCHY</b:widget-setting>
+        <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+        <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+        <b:widget-setting name='monthPattern'>MMMM</b:widget-setting>
+        <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+        <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+        <b:widget-setting name='chronological'>false</b:widget-setting>
+        <b:widget-setting name='showPosts'>true</b:widget-setting>
+        <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+      </b:widget-settings>
+      <b:includable id='main'>
+       <div class="mmbb-archive">
+        <div class="panel panel-default">
+         <div class="panel-heading">
+           <h4 class="panel-title">
+            <b:if cond='data:title != &quot;&quot;'><data:title/></b:if>
+          </h4>
+         </div>
+         <div class='panel-body'>
+          <div id='ArchiveList'>
+           <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
+            <b:include cond='data:style == &quot;HIERARCHY&quot;' data='data' name='interval'/>
+            <b:include cond='data:style == &quot;FLAT&quot;' data='data' name='flat'/>
+            <b:include cond='data:style == &quot;MENU&quot;' data='data' name='menu'/>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </b:includable>
+      <b:includable id='flat' var='data'>
+        <ul class='flat'>
+          <b:loop values='data:data' var='i'>
+            <li class='archivedate'>
+              <a expr:href='data:i.url'><data:i.name/></a> (<data:i.post-count/>)
+            </li>
+          </b:loop>
+        </ul>
+      </b:includable>
+      <b:includable id='interval' var='intervalData'>
+        <b:loop values='data:intervalData' var='interval'>
+          <ul class='hierarchy'>
+            <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
+              <b:include cond='data:interval.toggleId' data='interval' name='toggle'/>
+              <a class='post-count-link' expr:href='data:interval.url'>
+                <data:interval.name/>
+              </a>
+              <span class='post-count badge' dir='ltr'><data:interval.post-count/></span>
+              <b:include cond='data:interval.data' data='interval.data' name='interval'/>
+              <b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
+            </li>
+          </ul>
+        </b:loop>
+      </b:includable>
+      <b:includable id='menu' var='data'>
+        <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+          <option value=''><data:title/></option>
+          <b:loop values='data:data' var='i'>
+            <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
+          </b:loop>
+        </select>
+      </b:includable>
+      <b:includable id='posts' var='posts'>
+        <ul class='posts'>
+          <b:loop values='data:posts' var='post'>
+            <li>&amp;bull; <a expr:href='data:post.url'><data:post.title/></a></li>
+          </b:loop>
+        </ul>
+      </b:includable>
+      <b:includable id='toggle' var='interval'>
+        <a class='toggle' href='javascript:void(0)'>
+          <span expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
+            <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
+              &#9660;&#160;
+            <b:elseif cond='data:blog.languageDirection == &quot;rtl&quot;'/>
+              &#9668;&#160;
+            <b:else/>
+              &#9658;&#160;
+            </b:if>
+          </span>
+        </a>
+      </b:includable>
+     </b:widget>
+
      <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='1' visible='true'>
         <b:includable id='main'>
          <div class="mmbb-popularpost"><!-- mmbb-popularpost -->
@@ -1215,22 +1310,48 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
    </div><!-- /.sidebar1 col- widgets -->
    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" id="mmbb-sidebar2">
     <b:section class='mmbb-sidebar' id='sidebar2' preferred='yes'>
+
+     <b:widget id='Label2' locked='false' mobile='yes' title='Category' type='Label' version='1' visible='true'>
+      <b:widget-settings>
+        <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+      </b:widget-settings>
+      <b:includable id='main'>
+       <div class="mmbb-category">
+        <div class="panel panel-default">
+          <div class="panel-heading"><h4 class="panel-title"><data:title/></h4></div>
+          <div class="panel-body">
+            <span class="sr-only">Labels/category list</span>
+            <ul class="list-inline text-capitalize">
+              <b:loop values='data:labels' var='label'>
+                <li class="text-capitalize">
+                  <div class="btn-group" role="group">
+                  <a class='btn btn-default btn-xs' rel='tag' expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+                    <b:if cond='data:showFreqNumbers'>
+                      <a class="btn btn-default btn-xs"><span dir='ltr'><data:label.count/></span></a>
+                    </b:if>
+                  </div>
+                </li>
+              </b:loop>
+            </ul>
+          </div>
+        </div>
+       </div> <!-- /.category -->
+      </b:includable>
+     </b:widget>
+
      <b:widget id='HTML1' locked='false' title='Blogroll' type='HTML' version='1' visible='true'>
       <b:includable id='main'>
        <div class="mmbb-blogroll"><!-- online -->
         <div class="panel panel-default">
           <div class="panel-heading"><h4 class="panel-title"><data:title/></h4></div>
           <div class="panel-body">
-            <ul class="list-unstyled">
-              <li>&amp;bull; <a href='http://mmbbproject.github.io/' target='_blank'>MMBB Template</a></li>
-              <li>&amp;bull; <a href="http://github.com/mmbbproject/mmbb" target="_blank">github.com/mmbbproject/mmbb</a></li>
-            </ul>
+            <data:content/>
           </div>
-
         </div>
        </div>
       </b:includable>
      </b:widget>
+
      <b:widget id='Profile1' locked='false' title='Mengenai Saya' type='Profile' version='1' visible='true'>
       <b:includable id='main'>
        <div class="mmbb-author"><!-- online -->
@@ -1239,17 +1360,21 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
           <div class="panel-body text-center">
            <div class="thumbnail">
             <b:if cond='data:photo.url != &quot;&quot;'>
-             <a expr:href='data:userUrl'><img class='img-circle' expr:alt='data:messages.myPhoto' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/></a>
+
+             <a expr:href='data:userUrl'><img class='img-circle' alt='Author Profile Photo' title='Author profile photo' expr:alt='data:messages.myPhoto' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/></a>
             <b:else/>
-             <a expr:href='data:userUrl'><img class='img-circle' alt='Author Profile Photo' height='80' src='holder.js/80x80?text=No \n Profile \n Img' width='80'/></a>            
+             <a expr:href='data:userUrl'><img class='img-circle' title='Author Profile Photo' alt='Author Profile Photo' height='80' src='holder.js/80x80?text=No \n Profile \n Img' width='80'/></a>            
             </b:if>
 
-            <div class="caption small">
+            <div class="caption small"><span class="sr-only">Author name</span>
               <h5>
                 <a class='profile-name-link' expr:href='data:userUrl' rel='author'>
                 <data:displayname/></a>
               </h5>
-              <b:if cond='data:aboutme != &quot;&quot;'><data:aboutme/></b:if>
+              <b:if cond='data:showlocation'>
+                <p class='profile-data'><data:location/></p>
+              </b:if>
+             <b:if cond='data:aboutme != &quot;&quot;'><p class='text-muted'><data:aboutme/></p></b:if>
             </div>
            </div>
           </div>
@@ -1261,19 +1386,20 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
     </b:section>
    </div><!-- /.sidebar2 col- widgets -->
   </div> <!-- /.row container -->
-</div><!-- /.Container --> 
+</div><!-- /.container --> 
   
 <footer itemscope='itemscope' itemtype='http://schema.org/WPFooter'>
   <div class='container' itemprop='creator' itemscope='itemscope' itemtype='http://schema.org/Person'>
-    Copyleft &amp;copy; 2017 <data:blog.title/> &amp;middot; <a href='https://mmbbproject.github.io' target='_blank'>MMBB Template</a> Design by <a href='https://jqueryholic.blogspot.co.id' itemprop='url' target='_blank'><span itemprop='name'>ox69xo</span></a><br />
+    Copyleft &amp;copy; 2017 <data:blog.title/> &amp;middot; <a href='https://mmbbproject.github.io' target='_blank'>MMBB Template</a> Design by <a href='https://plus.google.com/113540462412100538166' itemprop='url' target='_blank'><span itemprop='name'>ox69xo</span></a><br />
       Powered by <a href='http://blogger.com' target='_blank'>Blogger</a>
   </div>
 </footer>
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' type='text/javascript'/>
+
 <script src='https://cdn.rawgit.com/seujungkuku/own/04999ef0/collapse.min.js' type='text/javascript'/>
 <script src='https://cdn.rawgit.com/seujungkuku/own/ebc96cf0/holder.min.js' type='text/javascript'/>
 <script type='text/javascript'>var icon_blogger = true;</script>
-<script src='https://cdn.rawgit.com/seujungkuku/own/b24660dc/mmbb.enc.min.js' type='text/javascript'/>
+<script src='https://cdn.rawgit.com/seujungkuku/own/6083d184/mmbb.enc.min.js' type='text/javascript'/>
 <!--   </body> -->
 &lt;!---</body>---&gt;&lt;/body&gt;
 </html>

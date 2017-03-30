@@ -12,62 +12,68 @@
     <!--<link rel="stylesheet" id="options-google-fonts" href="//fonts.googleapis.com/css?family=Roboto:300,400&subset=latin" type="text/css" media="all"/>-->
     <!-- Bootstrap tanpa glyphicon, jumbotron dan well -->    
     <link href="css/bootstrap.custom.min.css" rel="stylesheet">
-    <link href="css/mmbb.font.min.css" rel="stylesheet">    
+    <link href="../../mmbb-font/styles.css" rel="stylesheet">    
+    <!-- <link href="css/mmbb.font.min.css" rel="stylesheet">     -->
     <link href="css/styles.css" rel="stylesheet"> 
-    
+    <style>*{font-family:"Open Sans";}</style>
   </head>
 
-  <body>
+  <body data-template="mmbbproject.github.io">
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="file:///D:/Docs/MMBB/template/html/home.html">MMBB Template</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav" id="mmbb-headermenu">
-                <li><a href="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/home.html">Home</a></li>
-                <li><a href="file:///D:/Docs/MMBB/template/html/home.html">About</a></li>
-                <li><a href="javascript:;">Contact</a></li>
-               
-            </ul>
-            <form action='/search' class='navbar-form navbar-right' method='get' role='search'>
-              <div class='input-group'>
-                <input class='form-control form-main-search' required='true' name='q' placeholder='Search' type='text'/>
-                <div class='input-group-btn'>
-                  <button class='btn btn-default' type='submit'>
-                    <span class='icon jqh-search'/>
-                  </button>
-                </div>
-              </div>
-            </form>   
-        </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="file:///D:/Docs/MMBB/template/html/home.html">MMBB Template</a>
     </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="nav navbar-nav" id="mmbb-headermenu">
+        <li><a href="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/home.html">Home</a></li>
+        <li><a href="file:///D:/Docs/MMBB/template/html/home.html">About</a></li>
+        <li><a href="javascript:;">Contact</a></li>
+         
+      </ul>
+      <form action="/search" class="navbar-form navbar-right" method="get" role="search">
+        <div class="input-group">
+          <input class="form-control form-main-search" required="true" name="q" placeholder="Search" type="text"/>
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <span class="icon jqh-search"/>
+            </button>
+          </div>
+        </div>
+      </form>   
+    </div>
+  </div>
 </nav> 
 
 <div class="container">
  <div class="row">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mmbb-header">
-
-<ol class="breadcrumb">
-  <li><a href="#">Home</a></li>  
-  <li class="active">Post Title <b>Film</b></li>
-</ol>
+    <div class="alert alert-info text-center">
+      <h4>Demo <a href="https://mmbbproject.github.io" title="MMBB Website" target="_blank">MMBB Template <span class="icon jqh-external-link"></span></a>&nbsp;Blogger</h4>
+      Template super responsive dan mengusung mobile first, berbasiskan <a href="https://getbootstrap.com" title="get bootstrap" target="_blank">Bootstrap v3.3.7</a>.<br /> 
+      Test <b>Mobile Friendly</b> template ini di <a href="https://search.google.com/search-console/mobile-friendly?id=00CsGgjU-kL62lB-nwXvMQ" target="_blank" title="Google Mobile Friendly test">Google</a> dan cek juga <em>stuktur microdata</em> di <a href="https://search.google.com/structured-data/testing-tool#url=http%3A%2F%2Fip3web.blogspot.co.id" target="_blank" title="Structure Data Testing Tool">Google</a>, <span class="text-success">tidak ada error</span>.
+      Download? kunjungi halaman <a href="https://mmbbproject.github.io" title="MMBB Website" target="_blank">MMBB Template</a> dan pilih tombol Download, info selengkapnya di <a href="https://jqueryholic.blogspot.co.id" title="jQueryHolic" target="_blank">jQueryHolic</a>.
+    </div>
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>  
+      <li class="active">Post Title <b>Film</b></li>
+    </ol>
 
   </div>
 
   <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" id="mmbb-main">
    <ul class="list-group"> <!-- Status msg -->
      <li class="list-group-item">
-      <div class="status-msg-body">
+      <div class="status-msg-body text-center">
         Tampilkan posting dengan label <b>label 3</b>. <a href="http://ip3web.blogspot.com/">Tampilkan semua posting</a>
       </div>
     </li>
@@ -78,12 +84,12 @@
       <li class="list-group-item">
       <div class="media">
         <div class="media-title">
-          <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
+          <h5 class="media-heading"><a href="javascript:;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
         </div>
         <div class="media-left"></div>
         <div class="media-body">
           <span class="text-muted"><span class="icon jqh-calendar"></span> 11 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein </span> &middot; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Utquip...<a href='javascript:;'>readmore</a>... 
+          tempor incididunt ut labore et dolore magna aliqua. Utquip...<a href="javascript:;">readmore</a>... 
         </div>
       </div>
       </li>
@@ -91,17 +97,16 @@
       <li class="list-group-item">
       <div class="media">
         <div class="media-title">
-          <h5 class="media-heading"><a href='javascript:;'>icing elit, sed do eiusmod
+          <h5 class="media-heading"><a href="javascript:;">icing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna </a></h5>
         </div>
         <div class="media-left">
-          <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images"/> 
-
+          <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images"/>
         </div>
         <div class="media-body">
           <span class="text-muted"><span class="icon jqh-calendar"></span> 11 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein </span> &middot; Lorem ipsctetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip...<a href='javascript:;'>readmore</a>... 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip...<a href="javascript:;">readmore</a>... 
         </div>
       </div>
       </li>
@@ -109,12 +114,12 @@
       <li class="list-group-item">
       <div class="media">
         <div class="media-title">
-          <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius</a></h5>
+          <h5 class="media-heading"><a href="javascript:;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius</a></h5>
         </div>
         <div class="media-left"></div>
         <div class="media-body">
           <span class="text-muted"><span class="icon jqh-calendar"></span> 11 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein &middot; </span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Utquip...<a href='javascript:;'>readmore</a>...
+          tempor incididunt ut labore et dolore magna aliqua. Utquip...<a href="javascript:;">readmore</a>...
         </div>
       </div>
       </li>
@@ -122,7 +127,7 @@
       <li class="list-group-item">
       <div class="media">
         <div class="media-title">
-          <h5><a href='javascript:;'>icing elit, sed do eiusmod
+          <h5><a href="javascript:;">icing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna </a></h5>
         </div>
         <div class="media-left">
@@ -130,9 +135,9 @@
 
         </div>
         <div class="media-body">
-          <span class="text-muted"><span class="icon jqh-calendar"></span> 11 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein </span> &middot; Lorem ipsctetur adipisicing elit, sed do eiusmod
+          <span class="text-muted"><span class="icon jqh-calendar"></span> 11 Feb, 2017 &middot; <span class="icon jqh-user"></span><span class="icon jqh-lock"></span><span class="icon jqh-twitter"></span> Husein </span> &middot; Lorem ipsctetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip...<a href='javascript:;'>readmore</a>...
+          quis nostrud exercitation ullamco laboris nisi ut aliquip...<a href="javascript:;">readmore</a>...
         </div>
       </div>
       </li>
@@ -140,7 +145,7 @@
       <li class="list-group-item">
       <div class="media">
         <div class="media-title">
-          <h5 class="media-heading"><a href='javascript:;'>icing elit, sed do eiusmod
+          <h5 class="media-heading"><a href="javascript:;">icing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna </a></h4>
         </div>
         <div class="media-left media-middle">
@@ -148,7 +153,7 @@
         </div>
         <div class="media-body">
           <span class="text-muted"><span class="icon jqh-calendar"></span> 11 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein </span> &middot; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Utquip...<a href='javascript:;'>readmore</a>...
+          tempor incididunt ut labore et dolore magna aliqua. Utquip...<a href="javascript:;">readmore</a>...
         </div>
       </div>
       </li>
@@ -156,7 +161,7 @@
       <li class="list-group-item">
       <div class="media">
         <div class="media-title">
-          <h5 class="media-heading"><a href='javascript:;'>icing elit, sed do eiusmod
+          <h5 class="media-heading"><a href="javascript:;">icing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna </a></h5>
         </div>
         <div class="media-left media-middle">
@@ -166,7 +171,7 @@
         <div class="media-body">
           <span class="text-muted"><span class="icon jqh-calendar"></span> 111 Feb, 2017 &middot; <span class="icon jqh-user"></span> Husein </span> &middot; Lorem ipsctetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip...<a href='javascript:;'>readmore</a>...
+          quis nostrud exercitation ullamco laboris nisi ut aliquip...<a href="javascript:;">readmore</a>...
         </div>
       </div>
       </li>            
@@ -177,7 +182,7 @@
       <ul class="pager">
         <li class="previous"><a class="active" href="javascript:;">Previous</a></li>
         <li><a class="active" href="javascript:;">Home</a></li>
-        <li class="next"><a href="javascript:;">Next</a></li>    
+        <li class="next"><a href="javascript:;">Next</a></li>
       </ul>
     </nav>
    </div>
@@ -190,13 +195,27 @@
       <div class="panel-heading"><h4 class="panel-title">Category</h4></div>
       <div class="panel-body">
         <ul class="list-inline text-capitalize">
-        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">Category label</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">Category label2</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Category terpilih">Categy Name</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:;">egory Name</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:void(0)" data-toggle="tooltip" data-placement="top">ery Name</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:void(0)">egory Nme</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:void(0)">egory te me</a></li>
+        <li><div class="btn-group" role="group"><a class="btn btn-default btn-xs" href="file:///D:/Docs/MMBB/template/html/home.html">Category label</a><a class="btn btn-default btn-xs"><b>2</b></a></div></li>
+
+        <li><a class="btn btn-default btn-xs" href="javascript:void(0);">Category label2</a></li>
+
+        <li><div class="btn-group" role="group">
+          <a class="btn btn-default btn-xs" href="javascript:void(0)">Categy Name</a>
+          <a class="btn btn-default btn-xs"><b>15</b></a>
+        </div></li>
+
+        <li><div class="btn-group" role="group">
+          <a class="btn btn-default btn-xs" title="Category terpilih" href="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/home.html">egory Name</a>
+          <a class="btn btn-default btn-xs"><b>2</b></a>
+        </div></li>
+
+        <li><a class="btn btn-default btn-xs" href="javascript:void(0)">ery Name</a></li>
+        <li><div class="btn-group" role="group">
+          <a class="btn btn-default btn-xs" href="javascript:void(0)">egory Nme</a>
+          <a class="btn btn-default btn-xs"><b>2</b></a>
+        </div></li>
+
+        <li><a class="btn btn-default btn-xs" href="javascript:void(0)">egory te me</a></li>
         </ul>
       </div>
       <div class="panel-footer">
@@ -205,6 +224,140 @@
      </div>
     </div>
    </div> <!-- /.category -->
+
+   <div class="widget"><!-- online -->
+    <div class="mmbb-archive">
+     <div class="panel panel-default">
+      <div class="panel-heading"><h4 class="panel-title">Archive</h4></div>
+      <div class="panel-body">
+        <div id='ArchiveList'>
+          <div id='BlogArchive1_ArchiveList'>
+           <ul class='hierarchy'>
+            <li class='archivedate expanded'>
+              <a class='toggle' href='javascript:void(0)'>
+              <span class='zippy toggle-open'>
+                &#9660;&#160;
+              </span>
+              </a>
+              <a class='post-count-link' href='http://ip3web.blogspot.co.id/search?updated-min=2017-01-01T00:00:00-08:00&amp;updated-max=2018-01-01T00:00:00-08:00&amp;max-results=8'> 2017
+              </a>
+              <span class='post-count badge' dir='ltr'>8</span>
+              <ul class='hierarchy'>
+                <li class='archivedate expanded'>
+                  <a class='toggle' href='javascript:void(0)'>
+                    <span class='zippy toggle-open'>
+                      &#9660;&#160;
+                    </span>
+                  </a>
+                  <a class='post-count-link' href='http://ip3web.blogspot.co.id/2017_02_01_archive.html'> Februari
+                  </a>
+                  <span class='post-count badge' dir='ltr'>8</span>
+                
+                  <ul class='posts'>
+                    <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-8.html'>Blog Post Title 8 -Lorem ipsum dolor sit amet, con...</a></li>
+                    <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-7.html'>Contoh Post tidak di ijinkan komentar</a></li>
+                    <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-title-post-6.html'>Blog Title Post 6  -Lorem ipsum dolor sit amet, co...</a></li>
+                    <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-5.html'>Blog Post Title 5 exercitation ullamco laboris nis...</a></li>
+                    <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-4.html'>Blog Post Title 4 -exercitation ullamco laboris ni...</a></li>
+                    <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/minimalist-modern-bootstrap-blogger.html'>Blog Post Title 2 -on ullamco laboris nisi ut aliq...</a></li>
+                    <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-1.html'>Blog Post Title 1 -on ullamco laboris nisi ut aliq...</a></li>
+                    <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-3.html'>Blog Post Title 3 -on ullamco laboris nisi ut aliq...</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class='hierarchy'>
+               <li class='archivedate expanded'>
+                <a class='toggle' href='javascript:void(0)'>
+                  <span class='zippy toggle-open'>
+                    &#9660;&#160;
+                  </span>
+                </a>
+                <a class='post-count-link' href='http://ip3web.blogspot.co.id/2017_02_01_archive.html'> Maret
+                </a>
+                <span class='post-count' dir='ltr'>(12)</span>
+                
+                <ul class='posts'>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-8.html'>Blog Post Title 8 -Lorem ipsum dolor sit amet, con...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-7.html'>Contoh Post tidak di ijinkan komentar</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-title-post-6.html'>Blog Title Post 6  -Lorem ipsum dolor sit amet, co...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-5.html'>Blog Post Title 5 exercitation ullamco laboris nis...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-4.html'>Blog Post Title 4 -exercitation ullamco laboris ni...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/minimalist-modern-bootstrap-blogger.html'>Blog Post Title 2 -on ullamco laboris nisi ut aliq...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-1.html'>Blog Post Title 1 -on ullamco laboris nisi ut aliq...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-3.html'>Blog Post Title 3 -on ullamco laboris nisi ut aliq...</a></li>
+                </ul>
+               </li>
+              </ul>
+            </li>
+
+            <li class='archivedate expanded'>
+              <a class='toggle' href='javascript:void(0)'>
+              <span class='zippy toggle-open'>
+                &#9660;&#160;
+              </span>
+              </a>
+              <a class='post-count-link' href='http://ip3web.blogspot.co.id/search?updated-min=2017-01-01T00:00:00-08:00&amp;updated-max=2018-01-01T00:00:00-08:00&amp;max-results=8'> 2016
+              </a>
+              <span class='post-count' dir='ltr'>(8)</span>
+              <ul class='hierarchy'>
+               <li class='archivedate expanded'>
+                <a class='toggle' href='javascript:void(0)'>
+                  <span class='zippy toggle-open'>
+                    &#9660;&#160;
+                  </span>
+                </a>
+                <a class='post-count-link' href='http://ip3web.blogspot.co.id/2017_02_01_archive.html'> November
+                </a>
+                <span class='post-count' dir='ltr'>(3)</span>
+                
+                <ul class='posts'>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-8.html'>Blog Post Title 8 -Lorem ipsum dolor sit amet, con...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-7.html'>Contoh Post tidak di ijinkan komentar</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-title-post-6.html'>Blog Title Post 6  -Lorem ipsum dolor sit amet, co...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-5.html'>Blog Post Title 5 exercitation ullamco laboris nis...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-4.html'>Blog Post Title 4 -exercitation ullamco laboris ni...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/minimalist-modern-bootstrap-blogger.html'>Blog Post Title 2 -on ullamco laboris nisi ut aliq...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-1.html'>Blog Post Title 1 -on ullamco laboris nisi ut aliq...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-3.html'>Blog Post Title 3 -on ullamco laboris nisi ut aliq...</a></li>
+                </ul>
+               </li>
+              </ul>
+
+              <ul class='hierarchy'>
+               <li class='archivedate expanded'>
+                <a class='toggle' href='javascript:void(0)'>
+                  <span class='zippy toggle-open'>
+                    &#9660;&#160;
+                  </span>
+                </a>
+                <a class='post-count-link' href='http://ip3web.blogspot.co.id/2017_02_01_archive.html'> Desember
+                </a>
+                <span class='post-count' dir='ltr'>(6)</span>
+                
+                <ul class='posts'>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-8.html'>Blog Post Title 8 -Lorem ipsum dolor sit amet, con...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-7.html'>Contoh Post tidak di ijinkan komentar</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-title-post-6.html'>Blog Title Post 6  -Lorem ipsum dolor sit amet, co...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-5.html'>Blog Post Title 5 exercitation ullamco laboris nis...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-4.html'>Blog Post Title 4 -exercitation ullamco laboris ni...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/minimalist-modern-bootstrap-blogger.html'>Blog Post Title 2 -on ullamco laboris nisi ut aliq...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-1.html'>Blog Post Title 1 -on ullamco laboris nisi ut aliq...</a></li>
+                  <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-3.html'>Blog Post Title 3 -on ullamco laboris nisi ut aliq...</a></li>
+                </ul>
+               </li>               
+              </ul>
+             </li>             
+           </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel-footer">
+        <a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a>
+      </div>
+     </div>
+    </div>
+   </div>
 
    <div class="widget"><!-- mmbb-popularpost -->
     <div class="mmbb-popularpost">
@@ -215,9 +368,9 @@
           <div class="media text-muted">          
             <div class="media-left"></div>
             <div class="media-body">
-            <h5 class="media-heading"><a href='file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/home.html'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
+            <h5 class="media-heading"><a href="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/home.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
+              tempor incidqua. Utquip...<a href="javascript:;">readmore</a>...</p>
             </div>
           </div>
           </li> 
@@ -225,9 +378,9 @@
           <div class="media text-muted">          
             <div class="media-left"></div>
             <div class="media-body">
-            <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
+            <h5 class="media-heading"><a href="javascript:;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
+              tempor incidqua. Utquip...<a href="javascript:;">readmore</a>...</p>
             </div>
           </div>
           </li> 
@@ -237,9 +390,9 @@
               <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
-            <h5 class="media-heading"><a href='file:///D:/Docs/MMBB/template/html/home.html'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
+            <h5 class="media-heading"><a href="file:///D:/Docs/MMBB/template/html/home.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
+              tempor incidqua. Utquip...<a href="javascript:;">readmore</a>...</p>
             </div>
           </div>
           </li>
@@ -249,9 +402,9 @@
                <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
-            <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
+            <h5 class="media-heading"><a href="javascript:;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
+              tempor incidqua. Utquip...<a href="javascript:;">readmore</a>...</p>
             </div>
           </div>
           </li>                 
@@ -271,9 +424,9 @@
      <div class="panel panel-default">
       <div class="panel-heading"><h4 class="panel-title">Blogroll</h4></div>
       <div class="panel-body">
-        <ul class="list-unstyled">
-          <li>&bull; <a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a></li>
-          <li>&bull; <a href="http://mmbbproject.github.io" target="_blank">blog url 2</a></li>
+        <ul>
+          <li><a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a></li>
+          <li><a href="http://mmbbproject.github.io" target="_blank">blog url 2</a></li>
         </ul>
       </div>
       <div class="panel-footer">
@@ -306,15 +459,15 @@
 </div> <!-- /.container -->
 
 <footer>
-  <div class='container'>
-      Copyleft &copy; 2017 Your Blog &middot; <a href='http://mmbbproject.github.io/' target='_blank'>MMBB Template</a> Design by <a href='http://jqueryholic.blogspot.co.id' target='_blank'>ox69xo</a><br />
-      Powered by <a href='http://blogger.com' target='_blank'>Blogger</a>
+  <div class="container">
+      Copyleft &copy; 2017 Your Blog &middot; <a href="http://mmbbproject.github.io/" target="_blank">MMBB Template</a> Design by <a href="http://jqueryholic.blogspot.co.id" target="_blank">ox69xo</a><br />
+      Powered by <a href="http://blogger.com" target="_blank">Blogger</a>
   </div>
 </footer>
-<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="../../jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/holder.min.js"></script>
 <script type="text/javascript" src="js/collapse.js"></script>
-<script type='text/javascript'>var icon_blogger = true;</script>
+<script type="text/javascript">var icon_blogger = true;</script>
 <script type="text/javascript" src="../../mmbb.js"></script>
   <!-- atau -->
 <!-- <script type="text/javascript" src="js/mmbb.enc.min.js"></script>   -->

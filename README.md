@@ -15,3 +15,5 @@ Template Blogger di buat menggunakan [Bootstrap](https://getbootstrap.com "Get B
 - Save.
 
 [Lihat selengkapnya di Google](https://www.google.co.id/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=cara+mengganti+template+blogger&* "Pemasangan template Blogger") # [Demo](http://ip3web.blogspot.com "Demo MMBB Template blogger") # [Tips & trick](http://jqueryholic.blogspot.com "Personal Blog") # [Website](http://mmbbproject.github.io "Webpage MMBB Template")
+___
+This free Blogger template is licensed under the Creative Commons Attribution 4.0 License, which permits both personal and commercial use.

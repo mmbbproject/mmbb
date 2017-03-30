@@ -22,7 +22,7 @@
     </style>
   </head>
 
-  <body>
+  <body data-template="mmbbproject.github.io">
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -43,12 +43,12 @@
                 <li><a href="javascript:;">About</a></li>
                 <li><a href="file:///D:/Docs/MMBB/template/html/detail.html">Contact</a></li>
             </ul>
-            <form action='/search' class='navbar-form navbar-right' method='get' role='search'>
-              <div class='input-group'>
-                <input class='form-control form-main-search' required='true' name='q' placeholder='Search' type='text'/>
-                <div class='input-group-btn'>
-                  <button class='btn btn-default' type='submit'>
-                    <span class='icon jqh-search'/>
+            <form action="/search" class="navbar-form navbar-right" method="get" role="search">
+              <div class="input-group">
+                <input class="form-control form-main-search" required="true" name="q" placeholder="Search" type="text"/>
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <span class="icon jqh-search"/>
                   </button>
                 </div>
               </div>
@@ -103,13 +103,13 @@
           <div class="pull-right">
             <h5>Sharing this</h5>
             <a href="#0" aria-label="Google+">
-                <span class='icon jqh-googleplus-square icon-md'></span>
+                <span class="icon jqh-googleplus-square icon-md"></span>
             </a>         
             <a href="#0" aria-label="Twitter">
-                <span class='icon jqh-twitter-square icon-md'></span>
+                <span class="icon jqh-twitter-square icon-md"></span>
             </a>
             <a href="#0" aria-label="Facebook">
-                <span class='icon jqh-facebook-square icon-md'></span>
+                <span class="icon jqh-facebook-square icon-md"></span>
             </a>
           </div>          
          <div class="clearfix"></div>
@@ -147,19 +147,33 @@
   </div> <!-- /.mmbb-main /.post-detail -->
 
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="mmbb-sidebar1">
-   <div class="widget"><!-- online -->
+<div class="widget"><!-- online -->
     <div class="mmbb-category">
      <div class="panel panel-default">
       <div class="panel-heading"><h4 class="panel-title">Category</h4></div>
       <div class="panel-body">
         <ul class="list-inline text-capitalize">
-        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">Category label</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">Category label2</a></li>
-        <li><a class='btn btn-default btn-xs active' href="javascript:;" data-toggle="tooltip" data-placement="top" title="Category terpilih">Categy Name</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">egory Name</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:void(0);" data-toggle="tooltip" data-placement="top">ery Name</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">egory Nme</a></li>
-        <li><a class='btn btn-default btn-xs' href="javascript:void(0);">egory te me</a></li>
+
+        <li><a class="btn btn-default btn-xs" href="javascript:void(0);">Category label2</a></li>
+        <li><div class="btn-group" role="group"><a class="btn btn-default btn-xs" href="file:///D:/Docs/MMBB/template/html/detail.html">Category label</a><a class="btn btn-default btn-xs"><b>2</b></a></div></li>
+
+        <li><div class="btn-group" role="group">
+          <a class="btn btn-default btn-xs" href="javascript:void(0)">Categy Name</a>
+          <a class="btn btn-default btn-xs"><b>15</b></a>
+        </div></li>
+
+
+        <li><a class="btn btn-default btn-xs" href="javascript:void(0)">ery Name</a></li>
+        <li><div class="btn-group" role="group">
+          <a class="btn btn-default btn-xs" title="Category terpilih" href="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/detail.html">egory Name</a>
+          <a class="btn btn-default btn-xs"><b>2</b></a>
+        </div></li>
+        <li><div class="btn-group" role="group">
+          <a class="btn btn-default btn-xs" href="javascript:void(0)">egory Nme</a>
+          <a class="btn btn-default btn-xs"><b>2</b></a>
+        </div></li>
+        
+        <li><a class="btn btn-default btn-xs" href="javascript:void(0)">egory te me</a></li>
         </ul>
       </div>
       <div class="panel-footer">
@@ -180,9 +194,9 @@
               <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
-            <h5 class="media-heading text-justify"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
+            <h5 class="media-heading text-justify"><a href="javascript:;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
+              tempor incidqua. Utquip...<a href="javascript:;">readmore</a>...</p>
             </div>
           </div>
           </li> 
@@ -192,9 +206,9 @@
               <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
-            <h5 class="media-heading"><a href='javascript:;'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
+            <h5 class="media-heading"><a href="javascript:;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
+              tempor incidqua. Utquip...<a href="javascript:;">readmore</a>...</p>
             </div>
           </div>
           </li> 
@@ -204,9 +218,9 @@
               <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
-            <h5 class="media-heading"><a href='file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/detail.html'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
+            <h5 class="media-heading"><a href="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/template/html/detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
+              tempor incidqua. Utquip...<a href="javascript:;">readmore</a>...</p>
             </div>
           </div>
           </li>
@@ -216,9 +230,9 @@
               <img class="media-object img-thumbnail" src="holder.js/80x80?text=No \n Images" alt="thumb"/>
             </div>
             <div class="media-body">
-            <h5 class="media-heading"><a href='file:///D:/Docs/MMBB/template/html/detail.html'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
+            <h5 class="media-heading"><a href="file:///D:/Docs/MMBB/template/html/detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</a></h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incidqua. Utquip...<a href='javascript:;'>readmore</a>...</p>
+              tempor incidqua. Utquip...<a href="javascript:;">readmore</a>...</p>
             </div>
           </div>
           </li>                 
@@ -238,9 +252,9 @@
      <div class="panel panel-default">
       <div class="panel-heading"><h4 class="panel-title">Blogroll</h4></div>
       <div class="panel-body">
-        <ul class="list-unstyled">
-          <li>&bull; <a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a></li>
-          <li>&bull; <a href="http://mmbbproject.github.io" target="_blank">blog url 2</a></li>
+        <ul>
+          <li><a href="http://mmbbproject.github.io" target="_blank">mmbbproject.github.io</a></li>
+          <li><a href="http://mmbbproject.github.io" target="_blank">blog url 2</a></li>
         </ul>
       </div>
       <div class="panel-footer">
@@ -275,15 +289,15 @@
 </div> <!-- /.container -->
 
 <footer>
-  <div class='container'>
-      Copyleft &copy; 2017 Your Blog &middot; <a href='http://mmbbproject.github.io/' target='_blank'>MMBB Template</a> Design by <a href='http://jqueryholic.blogspot.co.id' target='_blank'>ox69xo</a><br />
-      Powered by <a href='http://blogger.com' target='_blank'>Blogger</a>
+  <div class="container">
+      Copyleft &copy; 2017 Your Blog &middot; <a href="http://mmbbproject.github.io/" target="_blank">MMBB Template</a> Design by <a href="http://jqueryholic.blogspot.co.id" target="_blank">ox69xo</a><br />
+      Powered by <a href="http://blogger.com" target="_blank">Blogger</a>
   </div>
 </footer>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/holder.min.js"></script>
 <script type="text/javascript" src="js/collapse.js"></script>
-<script type='text/javascript'>var icon_blogger = true;</script>
+<script type="text/javascript">var icon_blogger = true;</script>
 <script type="text/javascript" src="../../mmbb.js"></script>
   <!-- atau -->
 <!-- <script type="text/javascript" src="js/mmbb.enc.min.js"></script>   -->

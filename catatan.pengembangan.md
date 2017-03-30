@@ -1,9 +1,9 @@
-# Catatan pengembangan:
+## Catatan pengembangan:
 
-## 21/03/2017
-### HTML
-#### Home page
-##### Desain ulang template
+### 21/03/2017
+#### HTML
+##### Home page
+###### Desain ulang template
 - Menambah total kolom di home page menjadi 3 kolom (2 sidebar, 1 home post)
 > Kolom pertama **Sidebar1**, kolom kedua **Home post**, kolom ketiga **Sidebar2**. Pengeturan kolom masih menggunakan **Grid system**, fitur andalan _Bootstrap_. `lg-4 md-4 sm-6 xs-12`.
 
@@ -16,24 +16,24 @@
 - Home post, menggunakan element **List Group** bawaan Bootstrap.
 - Sidebar widget menggunakan element **Panel** bawaan Bootstrap.
 - Paging di ubah ke Pager, style menggunakan **Pager** bawaan Bootstrap.
-## 22/03/2017
-### HTML 
-#### Detail page
-##### Desain ulang template
+### 22/03/2017
+#### HTML 
+##### Detail page
+###### Desain ulang template
 - Ganti style post-detail menggunakan element _Panel_ bawaan *Bootstrap*.
 > Menambahkan font-icon untuk social sharing.
 > Ganti style post terkait, menggunakan list-group berupa judul artikel saja.
-#### All page
+##### All page
 - Fix style widget **Blogroll**, padding panel-body di persempit.
 - Membuat style *Pager* untuk page aktif.
 - Mengganti font icon dari _Glyphicon_ ke _MMBB-font icon_, jumlah icon tidak lebih dari 50, sudah tersedia social icon. Ukuran font jauh lebih ramping dari _Glyphicon_ karena hanya memasukkan icon yang dibutuhkan. Custom font di fontastic.me.
 > Begitu juga Bootstrap css, di custom dan dihilangkan element _glyphicon_, jumbotron dan well. Custom langsung di getbootstrap.com.
 - Mengganti JS bootstrap full, dengan hanya menggunakan collapse.js.
-## 24/03/2017
-### XML
+### 24/03/2017
+#### XML
 - Convert ke xml, home post, pager, sidebar, post-detail, share button.
-## 25/03/2017
-### HTML
+### 25/03/2017
+#### HTML
 - Ganti style pager, posisi tidak melebar tapi rata ke tengah. _Style **Pager** tanpa `li.class next/prev`._
 - Fix style _status-msg,_ padding dirapatkan.
 - Fix style _home post_, padding di rapatkan.
@@ -42,15 +42,15 @@
 - Fix style _popularpost_, padding _media_ dikembalikan ke semula, yg dirapatkan 
 itu _media-body_ > p.
 - Fix jarak _status-msg_ dgn pager, jika ada di halaman _error page not found_.
-### XML
+#### XML
 - Convert update-an html ke xml.
-## 26/03/2017
-### HTML
+### 26/03/2017
+#### HTML
 - Fix _pager_.
 > style di kembalikan ke class next/previous , yaitu melebar penuh halaman.
 > mengganti teks ke icon.
 > memberi jarak dengan disqus comment form.
-### XML
+#### XML
 - Convert update-an html ke xml.
 - Remove _post related_.
 - Menerapkan _Disqus_ comment plugin.
@@ -60,16 +60,16 @@ itu _media-body_ > p.
 > Berdampak akan tidak bisa menggunakan _widget_ yang membutuhkan _CSS dan JS Blogger_.
 > seperti Archive dan lainnya.
 - Fix _pager_ yang tampil double di _static page_.
-## 27/03/2017
-### ALL
+### 27/03/2017
+#### ALL
 - Ubah default *image thumb* jika gambar kosong untuk *popular post* dan *home post* menggunakan holder.js.
 - Fix posisi _popular post_ juga kode di **xml**.
 - Menambahkan default `text-align:justify` /`.text-justify` *untuk post-detail*.
 - Menambahkan image thumb jika gambar *widget profile saya/about me* kosong.
 - Menambahkan 1 label ke *breadcrumb*, total ada 2 label aktif di *breadcrumb*. Urutannya: **Home** / **label pertama** / **label kedua** / **Judul postingan**.
 - Merubah `font-size` *popular post*, jika di akses oleh **tablet** atau **desktop** maka `font-size` menjadi `90%`, jika **mobile** maka `100%`. 
-## 28/03/2017
-### HTML
+### 28/03/2017
+#### HTML
 - Ubah style dan posisi *footer*, menggunakan *grid system* dan menambahkan icon ke sebelah kanan *footer* `text-align:right` /`.pull-right`.
 - Menambahkan icon *blogger* ke setiap footer `.panel` selain *post-detail* menggunakan javascript `mmbb.js`. Jika ada *.panel- footer*, maka akan di replace oleh icon *blogger* tersebut.
 - Memindahkan kode untuk gambar thumb kosong (popular post, home post, profile), dari *blogger* ke `mmbb.js`.
@@ -79,6 +79,22 @@ itu _media-body_ > p.
 - Menambahkan style active page untuk **Header Menu**, kode berada di `mmbb.js`.
 - Menambahkan style active page untuk **Popular Post**, kode berada di `mmbb.js`.
 - Fix style *breadcrumb* untuk tampilan di **mobile**, jarak elemen `li` terakhir terlalu jauh dari kiri, karena menggunakan `padding-left`. Mengurangi `line-height` menjadi `1.3em` khusus tampilan di **mobile**.
-- Fix style *home post*.
-- Fix style *breadcrumb*.
+- Fix style *Home post*.
+- Fix style *Breadcrumb*.
 - Fix *Header menu* link navbar-brand, disable jika halaman home aktif.
+### 29/03/2017
+#### ALL
+- Fix widget *Category/label* dan add style *show number post* menggunakan element *badge*, ubah `background-color` badge (jika ada di dalam class `btn-default`) dari hitam ke strong gray agar lebih sesuai dengan thema *minimalist* template.
+- Fix widget *Blogroll*, sekarang user bisa mengatur isi *Blogroll* di pengaturan **Layout** Blogger, cukup menuliskan:
+> `<ul>`
+	&nbsp; `<li><a href='url blog 1'>nama blog 1</a></li>`
+	&nbsp; `<li><a href='url blog 2'>nama blog 2</a></li>`
+`</ul>`
+- Add widget *Archive* style **HIERARCHY**, fitur toggle **Collapse** dan **Expanded** menggunakan kode js sendiri, krn JS bawaan *Blogger* di hilangkan.
+### 30/03/2017
+#### ALL
+- Fix widget *Archive*.
+- Add style hover di widget *Blogroll*.
+- Add style *Error page* dan *Search not found* di `status-msg-body`, desktop & tablet padding-top / bottom 100px, mobile 15px.
+- Ubah style *total post number* di widget *Category/Label - style LIST*.
+- Fix page *Archive*.
