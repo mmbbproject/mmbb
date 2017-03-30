@@ -12,9 +12,9 @@
   pelajari juga penulisan microdata agar blog/web lebih mudah di olah oleh search engine
 -->
 
-<!-- IF CONDITION super simple, tips dan trik kunjungi jqueryholic.blogspot.co.id -->  
+<!-- IF CONDITION super simple like Pro!, tips dan trik penulisan if condition lainnya kunjungi jqueryholic.blogspot.co.id -->
  <title itemprop='name'>
-  <b:if cond='data:blog.pageType == &quot;item&quot; OR data:blog.pageType == &quot;archive&quot; OR data:blog.pageType == &quot;label&quot;'>
+  <b:if cond='data:blog.pageType in {&quot;item&quot;,&quot;archive&quot;,&quot;label&quot;}'>
     <data:blog.pageName/> | <data:blog.title/>
   <b:elseif cond='data:blog.pageType == &quot;error_page&quot;'/>
     Page Not Found | <data:blog.title/>
@@ -764,12 +764,14 @@ Disarankan juga menyertakan link ke Bootstrap (http://getbootstrap.com/) dan Fon
                    <ul class="list-inline">
                     <b:if cond='data:top.showAuthor'>
                      <li><span class="icon jqh-user"></span> <a title="author profile url" target="_blank" rel="author profile url" expr:href="data:post.authorProfileUrl"><data:post.author/></a></li>
-                    <b:elseif cond='data:top.showTimestamp'/>
+                    </b:if>
+                    <b:if cond='data:top.showTimestamp'>
                      <li><span class="icon jqh-calendar"></span> <data:post.timestamp/></li>
                     </b:if>
                    </ul>
                   </li>
-                 <b:elseif cond='data:post.labels'/>
+                 </b:if>
+                 <b:if cond='data:post.labels'>
                   <li class="list-group-item">
                    <span class="icon jqh-tags"></span> 
                     <b:loop values='data:post.labels' var='label'>
